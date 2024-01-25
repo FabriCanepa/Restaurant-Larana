@@ -1,4 +1,4 @@
-import './Footer.css'; 
+import './NavbarFooter.css'; 
 import icono from '../../assets/Logo.png'
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';

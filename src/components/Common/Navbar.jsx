@@ -1,13 +1,10 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaShoppingCart, FaPlus, FaUser } from "react-icons/fa";
 
-import Cart from "../Cart/Cart"
 
-import "./Navbar.css";
+import "./NavBarFooter.css";
 
-const Navbar = ({ countProducts }) => {
-  const [active, setActive] = useState(false);
+const Navbar = () => {
 
   return (
     <nav className="navbar">
@@ -20,16 +17,7 @@ const Navbar = ({ countProducts }) => {
         <li className="flex-fill text-center">
           <NavLink to="/admin">
             <div className="container-icon">
-              <div
-                className="container-cart-icon"
-                onClick={() => setActive(!active)}
-              >
                 <FaShoppingCart />
-                <div className="count-products">
-                  <span id="contador-productos">{countProducts}</span>
-                </div>
-              <Cart/>
-              </div>
             </div>
           </NavLink>
         </li>
