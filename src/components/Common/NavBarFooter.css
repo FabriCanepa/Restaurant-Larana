@@ -1,0 +1,30 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #160404;
+    border-top: 1px solid #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+  }
+
+a svg {
+
+    font-size: 40px;
+    color: #4D000D;
+  }
+footer {
+    margin-bottom: 1rem;
+    background-color: #4d000d;
+    color: #e8d191;
+  }
+  footer a {
+    text-decoration: none;
+    color: #e8d191;
+  }
+  footer svg {
+    color: #e8d191;
+  }
+  
