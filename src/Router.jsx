@@ -6,14 +6,15 @@ import AdminView from './views/AdminView';
 import MenuView from './views/MenuView';
 import HomeView from './views/HomeView';
 import LoginView from './views/LoginView';
-import RegisterView from './views/RegisterView';
+
 import AboutUsView from './views/AboutUsView';
 import ErrorView from './views/ErrorView';
+import Navbar from './components/Common/Navbar'
 
-import Navbar from './common/navbar/Navbar';
-import Footer from './common/footer/Footer';
+import Footer from './components/Common/Footer';
 
-import './App.css'
+import './Router.css'
+import RegisterView from './views/RegisterView';
 
 
 const Router = ()=> {
@@ -27,7 +28,7 @@ const Router = ()=> {
       <Route path='/login' element={<LoginView />} />
       <Route path='/register' element={<RegisterView />} />
       <Route path='/admin' element={<AdminView />} />
-      <Route path='/aboutus' element={<AboutUsView />} />
+      <Route path='/aboutus' element={<AboutUsView/>} />
       <Route path='*' element={<ErrorView />} />
   </Routes>
   </main>

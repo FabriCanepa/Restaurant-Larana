@@ -1,0 +1,14 @@
+.eyePasword {
+    position: absolute;
+    top: 25.9%;
+    right: 43.2%;
+}
+
+@media screen and (width:576px ){
+    .eyePasword{
+        top: 27%;
+        right: 27%;
+        background: aqua;
+    }
+}
+
