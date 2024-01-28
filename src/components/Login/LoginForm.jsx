@@ -42,7 +42,7 @@ const LoginForm = () => {
       login(data);
 
       // Navegar a inicio pero estando logueado
-      navigate("/user");
+      navigate("/");
     },
     onError: (err) => {
       Swal.close();
@@ -55,7 +55,7 @@ const LoginForm = () => {
   const handleSubmit = (data) => {
     Swal.showLoading();
     postLogin(data);
-    console.log(data)
+    
   };
 
   // RENDER -----------------------------------------------------------
