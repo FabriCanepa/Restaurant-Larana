@@ -13,7 +13,7 @@ const Input = (props) => {
   } = props;
 
   return (
-    <fieldset className={`container px-5 ${className}`}>
+    <fieldset className={`container ${className}`}>
       <input
         type={type}
         id={`${name}-input`}

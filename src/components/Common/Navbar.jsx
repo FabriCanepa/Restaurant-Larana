@@ -1,6 +1,41 @@
+import { NavLink } from "react-router-dom";
+import { FaHome, FaShoppingCart, FaPlus, FaUser } from "react-icons/fa";
+
+
+import "./NavBarFooter.css";
+
 const Navbar = () => {
+
   return (
-    <div>Navbar</div>
-  )
-}
-export default Navbar
+    <header>
+    <nav className="navbar fixed-bottom">
+      <ul className="list-unstyled d-flex w-100 justify-content-around">
+        <li className="flex-fill text-center">
+          <NavLink className={`nav-link`} aria-current="page" to="/login">
+            <FaHome />
+          </NavLink>
+        </li>
+        <li className="flex-fill text-center">
+          <NavLink to="/admin">
+            <div className="container-icon">
+                <FaShoppingCart />
+            </div>
+          </NavLink>
+        </li>
+        <li className="flex-fill text-center">
+          <NavLink className={`nav-link`} to="/add">
+            <FaPlus />
+          </NavLink>
+        </li>
+        <li className="flex-fill text-center">
+          <NavLink className={`nav-link`} to="/user">
+            <FaUser />
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+    </header>
+  );
+};
+
+export default Navbar;

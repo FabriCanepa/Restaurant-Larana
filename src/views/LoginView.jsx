@@ -1,13 +1,17 @@
+
 import LoginForm from "../components/Login/LoginForm";
+import icono from '../assets/Logo.png'
 
 const LoginView = () => {
   return (
 
-    <section className="text-center">
-      <div className="d-flex justify-content-center">
+    <section className="back">
+      <div><img className='w2 h2' src={icono} alt="icono restaurante" /></div>
+      <div className="d-flex justify-content-center text-start">
         <LoginForm />
       </div>
     </section>
   );
 };
 export default LoginView;
+
