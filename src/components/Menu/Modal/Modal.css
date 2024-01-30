@@ -1,0 +1,104 @@
+.modal-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin-top: 8rem;
+  border: none !important;
+}
+
+.btn-close {
+  background-color: #ca0c2b;
+}
+
+.scrollText {
+  overflow-y: auto;
+  max-height: 400px;
+  scroll-behavior: smooth;
+}
+
+.scrollText::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollText::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.scrollText::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-close {
+    background-color: #ca0c2b;
+  }
+
+  .scrollText {
+    max-height: 125px !important;
+    overflow: auto;
+  }
+
+  .modal-content {
+    margin-top: 5rem !important;
+  }
+
+  .customBtnModal {
+    width: 70%;
+    background-color: #730014;
+    color: #e8d191;
+    border: none;
+    border-radius: 40px;
+    font-size: 23px;
+  }
+
+  .customModal img {
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .customBtnModal {
+    width: 70%;
+    background-color: #730014;
+    color: #e8d191;
+    border: none;
+    border-radius: 40px;
+    font-size: 23px;
+  }
+
+  .customModal img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+
+  .scrollText {
+    max-height: 150px;
+    overflow: auto;
+  }
+
+  .foodInfo {
+    max-height: 50px;
+    max-width: 80%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  .menuProducts {
+    display: flex;
+    gap: 29px;
+    flex-wrap: wrap;
+  }
+
+  .cardContainer {
+    width: 400px;
+  }
+
+  .menuImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
