@@ -109,13 +109,13 @@ const LoginForm = () => {
       <div className="loguinButton my-2">
         <button
           type="submit"
-          className="btn bg-primary w-100 button btn-user"
+          className="btn btnLogin w-100 button btn-user"
         >
-          Log In
+          Log in
         </button>
       </div>
       <p className="text-center">
-        Dont have an account?<Link to="/register"> Sign Up </Link>
+        Dont have an account?<Link to="/register"> Sign up </Link>
       </p>
       <p className="text-center">
         Forgot Password? Get in<Link to="/register"> Ingresa </Link>
