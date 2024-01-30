@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className='mb-3 py-3'>
-      <section className='container mb-4'>   
+    <footer className='container mb-0 mt-5'>
+      <section className='mb-4'>   
         <div className='row'>
           <div className='col-sm-12 col-md-4 text-center'>
             <img className='w2 h2' src={icono} alt="icono restaurante" />

@@ -11,6 +11,7 @@ import AboutUsView from './views/AboutUsView';
 import ErrorView from './views/ErrorView';
 
 import Navbar from './components/Common/Navbar';
+import NavbarLarge from './components/Common/NavbarLarge';
 import Footer from './components/Common/Footer';
 
 import './Router.css'
@@ -19,6 +20,7 @@ import './Router.css'
 const Router = ()=> {
 
   return <BrowserRouter>
+  <NavbarLarge/>
   <Navbar/>
   <main>
   <Routes>

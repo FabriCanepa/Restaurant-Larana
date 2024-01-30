@@ -7,7 +7,7 @@ import "./NavBarFooter.css";
 const Navbar = () => {
 
   return (
-    <nav className="navbar">
+    <nav className="navbar fixed-bottom" id="mobile">
       <ul className="list-unstyled d-flex w-100 justify-content-around">
         <li className="flex-fill text-center">
           <NavLink className={`nav-link`} aria-current="page" to="/login">
