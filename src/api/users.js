@@ -1,5 +1,18 @@
 const API_URL = import.meta.env.VITE_API_URL;
 
+export const getUserFn = async () => {
+
+    const res = await fetch(`${API_URL}/users`);
+
+    if (!res.ok) {
+      throw new Error('Failed to fetch users');
+    }
+
+    const data = await res.json();
+    return data;
+};
+
+
 export const postUserFn = async (data) => {
   const response = await fetch(`${API_URL}/users`, {
     method: "POST",

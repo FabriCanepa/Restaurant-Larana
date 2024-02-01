@@ -7,8 +7,7 @@ import "./NavBarFooter.css";
 const Navbar = () => {
 
   return (
-    <header>
-    <nav className="navbar fixed-bottom">
+    <nav className="navbar fixed-bottom" id="mobile">
       <ul className="list-unstyled d-flex w-100 justify-content-around">
         <li className="flex-fill text-center">
           <NavLink className={`nav-link`} aria-current="page" to="/login">
@@ -34,7 +33,6 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
-    </header>
   );
 };
 

@@ -9,6 +9,14 @@
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
       "isAdmin": false
+    },
+    {
+      "id": "1a1c",
+      "firstname": "nico",
+      "lastname": "nico",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false
     }
   ]
 }

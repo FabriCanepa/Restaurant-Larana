@@ -79,7 +79,8 @@ const LoginForm = () => {
           }}
         />
       </div>
-      <div className="d-flex focus inputContainer align-items-baseline">
+
+      <div className="d-flex focus align-items-baseline inputContainer">
         <Input
           label="Contraseña"
           type={showPwd ? "text" : "password"}
@@ -109,16 +110,17 @@ const LoginForm = () => {
       <div className="loguinButton my-2">
         <button
           type="submit"
-          className="btn bg-primary w-100 button btn-user"
+          className="btn w-100 button"
+          id="loginBtn"
         >
-          Log In
+          Log in
         </button>
       </div>
       <p className="text-center">
-        Dont have an account?<Link to="/register"> Sign Up </Link>
+        Dont have an account?<Link to="/register" className="link"> Sign up </Link>
       </p>
       <p className="text-center">
-        Forgot Password? Get in<Link to="/register"> Ingresa </Link>
+        <Link to="*" className="link">Did you forget your password?</Link>
       </p>
     </form>
   );

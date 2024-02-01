@@ -55,3 +55,20 @@
 .loguinButton {
   margin-left: 5.8px;
 }
+#loginBtn{
+  background: #730014 ;
+  color: #e8d191 ;
+}
+
+#loginBtn:hover {
+  background: #41020d;
+  
+}
+
+.link{
+  text-decoration: none;
+  color: #1877f2;
+}
+.link:hover {
+  border-bottom: 1px solid #1877f2;
+}

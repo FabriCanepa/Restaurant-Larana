@@ -10,6 +10,7 @@ import { useSession } from "../../stores/useSession";
 
 import Input from "../Input/Input";
 import "./register.css";
+import icono from '../../assets/Logo.png'
 
 const RegisterForm = () => {
   //ZUSTAND----------------------------------------------------------------
@@ -56,6 +57,7 @@ const RegisterForm = () => {
   return (
     <section>
       <form onSubmit={onSubmitRHF(handleSubmit)} className="formsRegister p-4">
+      <div className="text-center"><img className='w2 h2 logoRegister py-3' src={icono} alt="icono restaurante" /></div>
         <h4 className="text-center mb-4">Welcome to Larana</h4>
         <article className="row">
           <div className="col-12 col-md-6">
@@ -125,12 +127,12 @@ const RegisterForm = () => {
           mayúscula y tener una longitud entre 8 y 15 caracteres.
         </p>
         <div className="registerButton">
-        <button type="submit" className="btn btnRegister w-100 button">
+        <button type="submit" className="btn w-100 button" id="registerBtn">
           Sing Up
         </button>
         </div>
         <p className="my-2 text-center">
-          Do you already have an accountt?<Link to="/register"> Log in </Link>
+          Do you already have an accountt?<Link to="/register" className="link"> Log in </Link>
         </p>
       </form>
     </section>
