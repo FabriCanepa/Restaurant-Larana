@@ -16,13 +16,13 @@
 .password {
   margin: 0 !important;
 }
-#password-input {
+.inputContainer #password-input {
   border-radius: 0.375rem 0 0 0.375rem !important;
   border-right: none;
   box-shadow: none;
 }
 
-#email-input {
+.inputContainer #email-input {
   box-shadow: none;
 }
 

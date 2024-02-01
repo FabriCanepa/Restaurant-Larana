@@ -9,8 +9,7 @@ import { postUserFn } from "../../api/users";
 import { useSession } from "../../stores/useSession";
 
 import Input from "../Input/Input";
-import "./register.css"
-
+import "./register.css";
 
 const RegisterForm = () => {
   //ZUSTAND----------------------------------------------------------------
@@ -55,90 +54,86 @@ const RegisterForm = () => {
   };
   // RENDER --------------------------------------------------------------
   return (
-    <div>
+    <section>
       <form onSubmit={onSubmitRHF(handleSubmit)} className="formsRegister p-4">
-        <h4 className="text-center mb-3">Welcome to LARANA</h4>
-        <Input
-          label="Nombre"
-          name="firstname"
-          register={register}
-          error={!!errors?.firstname}
-          className="my-2"
-          options={{
-            minLength: 3,
-            maxLength: 25,
-            required: true,
-          }}
-        />
-        <Input
-          label="Apellido"
-          name="lastname"
-          register={register}
-          error={!!errors?.lastname}
-          className="my-2"
-          options={{
-            minLength: 3,
-            maxLength: 25,
-            required: true,
-          }}
-        />
-
-        <Input
-          label="Nombre de usuario"
-          name="username"
-          register={register}
-          error={!!errors?.username}
-          className="my-2"
-          options={{
-            minLength: 3,
-            maxLength: 25,
-            required: true,
-          }}
-        />
-        <Input
-          label="Email"
-          type="email"
-          name="email"
-          register={register}
-          error={!!errors?.email}
-          className="my-2"
-          options={{
-            minLength: 3,
-            maxLength: 25,
-            required: true,
-          }}
-        />
-        <Input
-          label="Contraseña"
-          type="password"
-          name="password"
-          register={register}
-          error={!!errors?.password}
-          className="mb-2"
-          options={{
-            minLength: 8,
-            maxLength: 15,
-            pattern: {
-              value: /^(?=.*[a-z])(?=.*[A-Z]).{8,15}$/,
-            },
-            required: true,
-          }}
-        />
+        <h4 className="text-center mb-4">Welcome to Larana</h4>
+        <article className="row">
+          <div className="col-12 col-md-6">
+            <Input
+              label="Nombre"
+              name="firstname"
+              register={register}
+              error={!!errors?.firstname}
+              className="my-2"
+              options={{
+                minLength: 3,
+                maxLength: 25,
+                required: true,
+              }}
+            />
+          </div>
+          <div className="col-12 col-md-6">
+            <Input
+              label="Apellido"
+              name="lastname"
+              register={register}
+              error={!!errors?.lastname}
+              className="my-2"
+              options={{
+                minLength: 3,
+                maxLength: 25,
+                required: true,
+              }}
+            />
+          </div>
+          <div className="col-12 col-md-6">
+            <Input
+              label="Email"
+              type="email"
+              name="email"
+              register={register}
+              error={!!errors?.email}
+              className="my-2"
+              options={{
+                minLength: 3,
+                maxLength: 25,
+                required: true,
+              }}
+            />
+          </div>
+          <div className="col-12 col-md-6">
+            <Input
+              label="Contraseña"
+              type="password"
+              name="password"
+              register={register}
+              error={!!errors?.password}
+              className="my-2"
+              options={{
+                minLength: 8,
+                maxLength: 15,
+                pattern: {
+                  value: /^(?=.*[a-z])(?=.*[A-Z]).{8,15}$/,
+                },
+                required: true,
+              }}
+            />{" "}
+          </div>
+        </article>
         <p>
           La contraseña debe contener al menos una letra minúscula, una letra
           mayúscula y tener una longitud entre 8 y 15 caracteres.
         </p>
-        <button
-          type="submit"
-          className="btn bg-primary w-100 button btn-user"
-        >
+        <div className="registerButton">
+        <button type="submit" className="btn btnRegister w-100 button">
           Sing Up
         </button>
+        </div>
         <p className="my-2 text-center">
           Do you already have an accountt?<Link to="/register"> Log in </Link>
         </p>
       </form>
-    </div>
+    </section>
   );
 };
 export default RegisterForm;

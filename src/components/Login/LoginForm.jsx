@@ -63,7 +63,7 @@ const LoginForm = () => {
   return (
     <form onSubmit={onSubmitRHF(handleSubmit)}>
       <h4 className="text-center">Welcome to Larana</h4>
-      <div className="d-flex align-items-baseline">
+      <div className="d-flex align-items-baseline inputContainer">
         <Input
           type="email"
           label="Email"
@@ -79,7 +79,7 @@ const LoginForm = () => {
           }}
         />
       </div>
-      <div className="d-flex focus align-items-baseline">
+      <div className="d-flex focus inputContainer align-items-baseline">
         <Input
           label="Contraseña"
           type={showPwd ? "text" : "password"}
