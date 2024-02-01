@@ -1,6 +1,5 @@
 import RegisterForm from "../components/Register/RegisterForm";
 
-
 const RegisterView = () => {
   return (
     <section className="back">

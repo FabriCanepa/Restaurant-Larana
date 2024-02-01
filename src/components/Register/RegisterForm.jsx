@@ -122,7 +122,7 @@ const RegisterForm = () => {
             />{" "}
           </div>
         </article>
-        <p>
+        <p className="text-center">
           La contraseña debe contener al menos una letra minúscula, una letra
           mayúscula y tener una longitud entre 8 y 15 caracteres.
         </p>
