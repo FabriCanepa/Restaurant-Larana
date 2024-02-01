@@ -16,13 +16,13 @@
 .password {
   margin: 0 !important;
 }
-#password-input {
+.inputContainer #password-input {
   border-radius: 0.375rem 0 0 0.375rem !important;
   border-right: none;
   box-shadow: none;
 }
 
-#email-input {
+.inputContainer #email-input {
   box-shadow: none;
 }
 
@@ -55,12 +55,20 @@
 .loguinButton {
   margin-left: 5.8px;
 }
-.btnLogin {
-  background: #730014;
-  color: #e8d191;
+#loginBtn{
+  background: #730014 ;
+  color: #e8d191 ;
 }
 
-.btnLogin:hover {
+#loginBtn:hover {
   background: #41020d;
   
+}
+
+.link{
+  text-decoration: none;
+  color: #1877f2;
+}
+.link:hover {
+  border-bottom: 1px solid #1877f2;
 }

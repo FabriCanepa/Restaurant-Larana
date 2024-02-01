@@ -63,7 +63,7 @@ const LoginForm = () => {
   return (
     <form onSubmit={onSubmitRHF(handleSubmit)}>
       <h4 className="text-center">Welcome to Larana</h4>
-      <div className="d-flex align-items-baseline">
+      <div className="d-flex align-items-baseline inputContainer">
         <Input
           type="email"
           label="Email"
@@ -79,7 +79,7 @@ const LoginForm = () => {
           }}
         />
       </div>
-      <div className="d-flex focus align-items-baseline">
+      <div className="d-flex focus align-items-baseline inputContainer">
         <Input
           label="Contraseña"
           type={showPwd ? "text" : "password"}
@@ -109,16 +109,17 @@ const LoginForm = () => {
       <div className="loguinButton my-2">
         <button
           type="submit"
-          className="btn btnLogin w-100 button btn-user"
+          className="btn w-100 button"
+          id="loginBtn"
         >
           Log in
         </button>
       </div>
       <p className="text-center">
-        Dont have an account?<Link to="/register"> Sign up </Link>
+        Dont have an account?<Link to="/register" className="link"> Sign up </Link>
       </p>
       <p className="text-center">
-        Forgot Password? Get in<Link to="/register"> Ingresa </Link>
+        <Link to="/register" className="link">Did you forget your password?</Link>
       </p>
     </form>
   );

@@ -1,3 +1,4 @@
+/* Navbar mobile*/
 .navbar {
     width: 100%;
     background-color: #160404;
@@ -8,21 +9,49 @@
     z-index: 1000;
   }
 
+
 a svg {
 
-    font-size: 40px;
-    color: #4D000D;
+  font-size: 40px;
+  color: #4D000D;
+}
+
+/* Navbar large */ 
+
+.navlarge {
+  background-color: #4d000d;
+  width: 100%;
+  color: #e8d191;
+}
+
+@media screen and (max-width: 745px) {
+  #large {
+    display: none;
   }
+  #mobile {
+    display: block;
+  }
+} 
+@media screen and (min-width: 746px) {
+  #large {
+    display: block;
+  }
+  #mobile {
+    display: none;
+  }
+} 
+
+ /* ------------FOOTER------------*/
+
 footer {
-    margin-bottom: 1rem;
-    background-color: #4d000d;
-    color: #e8d191;
-  }
-  footer a {
-    text-decoration: none;
-    color: #e8d191;
-  }
-  footer svg {
-    color: #e8d191;
-  }
-  
+  margin-bottom: 1rem;
+  background-color: #4d000d;
+  color: #e8d191;
+}
+footer a {
+  text-decoration: none;
+  color: #e8d191;
+}
+footer svg {
+  color: #e8d191;
+}
