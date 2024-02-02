@@ -1,0 +1,230 @@
+@media (max-width: 767px) {
+  .joinPage {
+    background-image: url(/src/assets/Background1.png);
+    height: 100vh;
+    z-index: 1;
+    background-color: #160404;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .joinPage {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .joinPage img {
+    flex-grow: 1;
+    width: 180px;
+    max-height: 200px;
+  }
+
+  .joinPage h2 {
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .joinPage a {
+    background-color: #730014;
+    text-decoration: none;
+    width: 280px;
+    height: 58px;
+    color: #e8d191;
+    border-radius: 48px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  /* Featured Products */
+
+  .previewPage {
+    background-color: #160404;
+  }
+
+  .previewPage h2 {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 36px 24px;
+    margin: 0;
+  }
+
+  .previewFoodCard {
+    display: flex;
+    text-align: center;
+    background-color: #730014;
+    width: 100%;
+    height: 125px;
+    margin: 0 auto;
+    gap: 8px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 4px;
+  }
+
+  .previewFoodCard img {
+    border-radius: 6px;
+    max-width: 140px;
+    flex-grow: 1;
+  }
+
+  .previewFoodCard p {
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.2;
+    margin: 0;
+    text-align: center;
+    flex-grow: 2;
+  }
+
+  /* Location */
+
+  .locationSec {
+    background-color: #160404;
+  }
+
+  .locationSec h2 {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 36px 24px;
+    margin: 0;
+  }
+
+  .customRatio {
+    --bs-aspect-ratio: calc(100% / 2.5);
+  }
+}
+
+@media (min-width: 768px) {
+  .joinPage {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .joinPage img {
+    flex-grow: 1;
+    width: 180px;
+    max-height: 200px;
+  }
+
+  .joinPage h2 {
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .joinPage a {
+    background-color: #730014;
+    text-decoration: none;
+    width: 280px;
+    height: 58px;
+    color: #e8d191;
+    border-radius: 48px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  /* Featured Products */
+
+  .previewPage {
+    background-color: #160404;
+  }
+
+  .previewPage h2 {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 36px 24px;
+    margin: 0;
+  }
+
+  .previewFoodCard {
+    display: flex;
+    text-align: center;
+    background-color: #730014;
+    width: 100%;
+    height: 125px;
+    margin: 0 auto;
+    gap: 8px;
+    text-align: center;
+    justify-content: space-around;
+    padding: 4px;
+  }
+
+  .previewFoodCard img {
+    border-radius: 6px;
+    max-width: 140px;
+    flex-grow: 1;
+  }
+
+  .previewFoodCard p {
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.2;
+    margin: 0;
+    text-align: center;
+    flex-grow: 2;
+  }
+
+  /* Location */
+
+  .locationSec {
+    background-color: #160404;
+  }
+
+  .locationSec h2 {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 36px 24px;
+    margin: 0;
+  }
+
+  .customRatio {
+    --bs-aspect-ratio: calc(100% / 2.5);
+  }
+
+
+}
