@@ -22,6 +22,9 @@ a svg {
   width: 100%;
   color: #e8d191;
 }
+.navCursor:hover {
+border-bottom: solid 1px;
+}
 
 @media screen and (max-width: 745px) {
   #large {
