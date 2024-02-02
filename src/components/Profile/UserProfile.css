@@ -1,0 +1,28 @@
+.perfilContainer {
+  margin-top: 150px;
+}
+
+.btnEdit {
+  position: relative;
+  right: 50px;
+  bottom: 15px;
+}
+
+.btnEdit:active {
+  background: none !important;
+  border: none !important;
+}
+
+.btnEdit:not(:disabled){
+    border: none !important;
+}
+
+#btnSave{
+   color: #e8d191;
+   background: #8B0000
+}
+
+#btnLogout{
+ color: #e8d191;
+ background: #8B0000
+}

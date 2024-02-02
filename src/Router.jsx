@@ -8,6 +8,8 @@ import RegisterView from "./views/RegisterView";
 import AboutUsView from "./views/AboutUsView";
 import ErrorView from "./views/ErrorView";
 import Navbar from "./components/Common/Navbar";
+import UserProfileView from "./views/UserProfileView";
+
 import NavbarLarge from "./components/Common/NavbarLarge";
 import Footer from "./components/Common/Footer";
 
@@ -23,6 +25,7 @@ const Router = () => {
           <Route path="/" element={<HomeView />} />
           <Route path="/menu" element={<MenuView />} />
           <Route path="/login" element={<LoginView />} />
+          <Route path="/profile" element={<UserProfileView />} />
           <Route path="/register" element={<RegisterView />} />
           <Route path="/admin" element={<AdminView />} />
           <Route path="/aboutus" element={<AboutUsView />} />

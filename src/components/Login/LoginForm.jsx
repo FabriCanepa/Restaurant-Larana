@@ -42,7 +42,7 @@ const LoginForm = () => {
       login(data);
 
       // Navegar a inicio pero estando logueado
-      navigate("/");
+      navigate("/profile");
     },
     onError: (err) => {
       Swal.close();

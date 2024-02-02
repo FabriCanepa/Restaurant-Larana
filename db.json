@@ -2,13 +2,13 @@
   "products": [],
   "users": [
     {
-      "id": "af09",
-      "firstname": "mau",
+      "firstname": "alexisss",
       "lastname": "Gunsett",
       "username": "Nadie",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
-      "isAdmin": false
+      "isAdmin": false,
+      "id": "af09"
     },
     {
       "id": "1a1c",
