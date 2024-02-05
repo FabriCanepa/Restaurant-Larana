@@ -1,4 +1,21 @@
 {
-    "products":[],
-    "users":[]
+  "products": [],
+  "users": [
+    {
+      "firstname": "Mau",
+      "lastname": "Gunsett",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": "af09"
+    },
+    {
+      "id": "1a1c",
+      "firstname": "nico",
+      "lastname": "nico",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false
+    }
+  ]
 }
