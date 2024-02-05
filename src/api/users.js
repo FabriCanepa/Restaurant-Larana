@@ -30,7 +30,7 @@ export const postUserFn = async (data) => {
 
 export const putUserFn = async (data) => {
   const apiUrl = `${API_URL}/users/${data.id}`;
-  console.log("URL de la solicitud:", apiUrl);
+ 
 
   const res = await fetch(apiUrl, {
     method: "PUT",

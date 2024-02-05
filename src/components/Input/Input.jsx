@@ -10,11 +10,13 @@ const Input = (props) => {
     className = "",
     error = false,
     readOnly = false,
+    inputRef,
   } = props;
 
   return (
     <fieldset className={`container ${className}`}>
       <input
+      ref={inputRef}
         type={type}
         id={`${name}-input`}
         className={`form-control ${error ? "is-invalid" : ""} `}

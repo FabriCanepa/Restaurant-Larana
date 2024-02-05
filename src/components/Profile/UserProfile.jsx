@@ -10,13 +10,12 @@ import { useForm } from "react-hook-form";
 import Input from "../Input/Input";
 import { useEffect, useState } from "react";
 
-import './UserProfile.css'
+import "./UserProfile.css";
 
 const Profile = () => {
   //-----------------------Zustand----------------------------------------------
   const { user, isLoggedIn, logout } = useSession();
   const { clearUser } = useUser();
-
   //-----------------------RHF----------------------------------------------
   const {
     register,
@@ -27,13 +26,14 @@ const Profile = () => {
   } = useForm();
 
   const [editingFields, setEditingFields] = useState({});
+  const [userName, setUserName] = useState(user.firstname);
 
   useEffect(() => {
     if (user) {
       setValue("firstname", user.firstname);
       setValue("lastname", user.lastname);
-      setValue("username", user.username);
       setValue("email", user.email);
+      setUserName(user.firstname);
     }
   }, [user, setValue]);
 
@@ -70,7 +70,6 @@ const Profile = () => {
     const newData = {
       firstname: data.firstname,
       lastname: data.lastname,
-      username: data.username,
       email: data.email,
       password: user.password,
       isAdmin: user.isAdmin,
@@ -78,7 +77,7 @@ const Profile = () => {
     };
 
     putUser(newData);
-
+    setUserName(data.firstname);
     return;
   };
   //Logout
@@ -99,111 +98,98 @@ const Profile = () => {
   };
 
   return (
-    <section className="container perfilContainer">
-        <form onSubmit={onSubmitRHF(handleSubmit)}>
-        <article className="text-center row perfil">
-          <div className="d-flex">
-            <Input
-              name="firstname"
-              register={register}
-              error={!!errors?.firstname}
-              className="my-2"
-              options={{
-                minLength: 3,
-                maxLength: 25,
-                required: true,
-              }}
-              readOnly={!editingFields.firstname}
-            />
-            <button
-              type="button"
-              className="btnEdit btn"
-              onClick={() => handleEditField("firstname")}
-            >
-              <TiEdit />
-            </button>
+    <section className="container perfilContainer text-center">
+      <form onSubmit={onSubmitRHF(handleSubmit)}>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/800px-User-avatar.svg.png"
+              alt=""
+              className="profileImg my-4"
+            /> 
+            <h1>Welcome {userName}</h1>
+        <article className="text-center ">
+          <div>
+            <div className="d-flex">
+              <Input
+                name="firstname"
+                register={register}
+                error={!!errors?.firstname}
+                className="my-2"
+                options={{
+                  minLength: 3,
+                  maxLength: 25,
+                  required: true,
+                }}
+                readOnly={!editingFields.firstname}
+              />
+              <button
+                type="button"
+                className="btnEdit btn"
+                onClick={() => handleEditField("firstname")}
+              >
+                <TiEdit />
+              </button>
+            </div>
+            <div className="d-flex">
+              <Input
+                name="lastname"
+                register={register}
+                error={!!errors?.lastname}
+                className="my-2"
+                options={{
+                  minLength: 3,
+                  maxLength: 25,
+                  required: true,
+                }}
+                readOnly={!editingFields.lastname}
+              />
+              <button
+                type="button"
+                className="btnEdit btn"
+                onClick={() => handleEditField("lastname")}
+              >
+                <TiEdit />
+              </button>
+            </div>
+            <div className="d-flex">
+              <Input
+                type="email"
+                name="email"
+                register={register}
+                error={!!errors?.email}
+                className="my-2"
+                options={{
+                  minLength: 3,
+                  maxLength: 25,
+                  required: true,
+                }}
+                readOnly={!editingFields.email}
+              />
+              <button
+                type="button"
+                className="btnEdit btn"
+                onClick={() => handleEditField("email")}
+              >
+                <TiEdit />
+              </button>
+            </div>
+            <div className="mt-3">
+              <button type="submit" className="btn" id="btnSave">
+                Save
+              </button>
+            </div>
           </div>
-          <div className="d-flex">
-            <Input
-              name="lastname"
-              register={register}
-              error={!!errors?.lastname}
-              className="my-2"
-              options={{
-                minLength: 3,
-                maxLength: 25,
-                required: true,
-              }}
-              readOnly={!editingFields.lastname}
-            />
-            <button
-              type="button"
-              className="btnEdit btn"
-              onClick={() => handleEditField("lastname")}
-            >
-              <TiEdit />
-            </button>
-          </div>
-          <div className="d-flex">
-            <Input
-              name="username"
-              register={register}
-              error={!!errors?.username}
-              className="my-2"
-              options={{
-                minLength: 3,
-                maxLength: 25,
-                required: true,
-              }}
-              readOnly={!editingFields.username}
-            />
-            <button
-              type="button"
-              className="btnEdit btn"
-              onClick={() => handleEditField("username")}
-            >
-              <TiEdit />
-            </button>
-          </div>
-          <div className="d-flex">
-            <Input
-              type="email"
-              name="email"
-              register={register}
-              error={!!errors?.email}
-              className="my-2"
-              options={{
-                minLength: 3,
-                maxLength: 25,
-                required: true,
-              }}
-              readOnly={!editingFields.email}
-            />
-            <button
-              type="button"
-              className="btnEdit btn"
-              onClick={() => handleEditField("email")}
-            >
-              <TiEdit />
-            </button>
-          </div>
-          <div className="mt-3">
-            <button type="submit" className="btn" id="btnSave">
-              Save
-            </button>
-          </div>
-          </article>
-        </form>
-        {isLoggedIn && (
-          <button
-            type="button"
-            className="btn w-100 my-3"
-            id="btnLogout"
-            onClick={handleLogout}
-          >
-            <MdLogout /> Sign off
-          </button>
-        )}
+        </article>
+      </form>
+      {isLoggedIn && (
+        <button
+          type="button"
+          className="btn w-100 my-3"
+          id="btnLogout"
+          onClick={handleLogout}
+        >
+          <MdLogout /> Sign off
+        </button>
+      )}
     </section>
   );
 };

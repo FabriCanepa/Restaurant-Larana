@@ -2,9 +2,8 @@
   "products": [],
   "users": [
     {
-      "firstname": "alexisss",
+      "firstname": "Mau",
       "lastname": "Gunsett",
-      "username": "Nadie",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
       "isAdmin": false,
