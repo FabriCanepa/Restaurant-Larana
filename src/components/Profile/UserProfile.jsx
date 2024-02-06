@@ -3,7 +3,6 @@ import { useSession, useUser } from "../../stores/useSession";
 
 import { toast } from "sonner";
 import Swal from "sweetalert2";
-import { MdLogout } from "react-icons/md";
 import { putUserFn } from "../../api/users";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
@@ -14,7 +13,7 @@ import "./UserProfile.css";
 
 const Profile = () => {
   //-----------------------Zustand----------------------------------------------
-  const { user, isLoggedIn, logout } = useSession();
+  const { user } = useSession();
   const { clearUser } = useUser();
   //-----------------------RHF----------------------------------------------
   const {
@@ -79,22 +78,6 @@ const Profile = () => {
     putUser(newData);
     setUserName(data.firstname);
     return;
-  };
-  //Logout
-  const handleLogout = () => {
-    Swal.fire({
-      title: "Atención",
-      text: "Estás por cerrar tu sesión",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonText: "Si, salir",
-      cancelButtonText: "Canselar",
-    }).then((res) => {
-      if (res.isConfirmed) {
-        toast.success("Sesión cerrada. ¡Hasta luego!");
-        logout();
-      }
-    });
   };
 
   return (
@@ -180,16 +163,6 @@ const Profile = () => {
           </div>
         </article>
       </form>
-      {isLoggedIn && (
-        <button
-          type="button"
-          className="btn w-100 my-3"
-          id="btnLogout"
-          onClick={handleLogout}
-        >
-          <MdLogout /> Sign off
-        </button>
-      )}
     </section>
   );
 };

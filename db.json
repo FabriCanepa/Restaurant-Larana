@@ -6,14 +6,22 @@
       "lastname": "Gunsett",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
-      "isAdmin": false,
+      "isAdmin": true,
       "id": "af09"
     },
     {
-      "id": "1a1c",
-      "firstname": "nico",
-      "lastname": "nico",
-      "email": "mau_gunsett@hotmail.com",
+      "id": "6b20",
+      "firstname": "Enzo",
+      "lastname": "igo",
+      "email": "enzogay@gay.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false
+    },
+    {
+      "id": "4deb",
+      "firstname": "alexis",
+      "lastname": "Gunsett",
+      "email": "mau3351@gmail.com",
       "password": "aA1*bbbb",
       "isAdmin": false
     }

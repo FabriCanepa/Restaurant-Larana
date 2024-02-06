@@ -32,6 +32,7 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
+      <button className="btn btn-danger">Sign off</button>
     </nav>
   );
 };
