@@ -27,12 +27,11 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="flex-fill text-center">
-          <NavLink className={`nav-link`} to="/user">
+          <NavLink className={`nav-link`} to="/profile">
             <FaUser />
           </NavLink>
         </li>
       </ul>
-      <button className="btn btn-danger">Sign off</button>
     </nav>
   );
 };
