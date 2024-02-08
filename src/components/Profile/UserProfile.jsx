@@ -3,12 +3,13 @@ import { useSession, useUser } from "../../stores/useSession";
 
 import { toast } from "sonner";
 import Swal from "sweetalert2";
-import { MdLogout } from "react-icons/md";
 import { putUserFn } from "../../api/users";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import Input from "../Input/Input";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { MdLogout } from "react-icons/md";
 
 import "./UserProfile.css";
 
@@ -16,6 +17,7 @@ const Profile = () => {
   //-----------------------Zustand----------------------------------------------
   const { user, isLoggedIn, logout } = useSession();
   const { clearUser } = useUser();
+  const navigate = useNavigate();
   //-----------------------RHF----------------------------------------------
   const {
     register,
@@ -80,7 +82,6 @@ const Profile = () => {
     setUserName(data.firstname);
     return;
   };
-  //Logout
   const handleLogout = () => {
     Swal.fire({
       title: "Atención",
@@ -93,6 +94,7 @@ const Profile = () => {
       if (res.isConfirmed) {
         toast.success("Sesión cerrada. ¡Hasta luego!");
         logout();
+        navigate("/");
       }
     });
   };
@@ -100,12 +102,12 @@ const Profile = () => {
   return (
     <section className="container perfilContainer text-center">
       <form onSubmit={onSubmitRHF(handleSubmit)}>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/800px-User-avatar.svg.png"
-              alt=""
-              className="profileImg my-4"
-            /> 
-            <h1>Welcome {userName}</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/800px-User-avatar.svg.png"
+          alt=""
+          className="profileImg my-4"
+        />
+        <h1>Welcome {userName}</h1>
         <article className="text-center ">
           <div>
             <div className="d-flex">
@@ -177,19 +179,20 @@ const Profile = () => {
                 Save
               </button>
             </div>
+            {isLoggedIn && (
+              <button
+                className="mt-2 w-50 btn"
+                id="btnLogoutMovil"
+                type="button"
+                onClick={handleLogout}
+              >
+                {" "}
+                <MdLogout /> Sign off
+              </button>
+            )}
           </div>
         </article>
       </form>
-      {isLoggedIn && (
-        <button
-          type="button"
-          className="btn w-100 my-3"
-          id="btnLogout"
-          onClick={handleLogout}
-        >
-          <MdLogout /> Sign off
-        </button>
-      )}
     </section>
   );
 };

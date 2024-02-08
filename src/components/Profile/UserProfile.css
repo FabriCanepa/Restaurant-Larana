@@ -1,5 +1,5 @@
 .perfilContainer {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .btnEdit {
@@ -22,10 +22,6 @@
    background: #8B0000
 }
 
-#btnLogout{
- color: #e8d191;
- background: #8B0000
-}
 .profileImg {
   width: 6rem;
   height: auto;

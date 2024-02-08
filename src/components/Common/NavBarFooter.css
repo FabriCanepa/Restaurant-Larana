@@ -24,6 +24,15 @@ a svg {
   color: #e8d191;
 }
 
+#btnLogout{
+  color: #e8d191;
+  background: #8B0000;}
+
+#btnLogoutMovil{
+  color: #e8d191;
+  background: #8B0000;
+ }
+
 @media screen and (max-width: 745px) {
   #large {
     display: none;
@@ -41,6 +50,11 @@ a svg {
   }
 } 
 
+@media screen and (min-width: 746px) {
+  #btnLogoutMovil {
+    display: none;
+  }
+} 
  /* ------------FOOTER------------*/
 
 footer {
@@ -55,3 +69,4 @@ footer a {
 footer svg {
   color: #e8d191;
 }
+
