@@ -1,6 +1,10 @@
+import Admin from "../components/Admin/Admin"
+
 const AdminView = () => {
   return (
-    <div>AdminView</div>
+    <>
+    <Admin />
+    </>
   )
 }
 export default AdminView

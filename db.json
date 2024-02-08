@@ -1,8 +1,17 @@
 {
-  "products": [],
+  "products": [
+    {
+      "id": "f3415412-109d-44e5-8063-324c5f5ed410",
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "Mauricio",
+      "cost": "4",
+      "ingredients": "sdasdasdasdasdasdasd",
+      "available": false
+    }
+  ],
   "users": [
     {
-      "firstname": "Mausdss",
+      "firstname": "Mau",
       "lastname": "Gunsett",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
