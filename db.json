@@ -1,38 +1,22 @@
 {
   "products": [
     {
-      "id": "f3415412-109d-44e5-8063-324c5f5ed410",
+      "id": "ca2a8c80-b4d3-4f7e-b715-0837e4857968",
       "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
       "name": "Mauricio",
-      "cost": "4",
-      "ingredients": "sdasdasdasdasdasdasd",
-      "available": false
+      "cost": "2",
+      "ingredients": "asfsassdas",
+      "available": true
     }
   ],
   "users": [
     {
-      "firstname": "Mau",
+      "id": "871e",
+      "firstname": "Mauricio",
       "lastname": "Gunsett",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
-      "isAdmin": true,
-      "id": "af09"
-    },
-    {
-      "id": "6b20",
-      "firstname": "Enzo",
-      "lastname": "igo",
-      "email": "enzogay@gay.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false
-    },
-    {
-      "id": "4deb",
-      "firstname": "alexis",
-      "lastname": "Gunsett",
-      "email": "mau3351@gmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false
+      "isAdmin": true
     }
   ]
 }

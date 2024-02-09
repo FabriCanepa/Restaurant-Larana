@@ -4,7 +4,7 @@ const Textarea = (props) => {
   const { label, name, options = {}, register, className = "" } = props;
 
   return (
-    <fieldset className={`container  px-5 ${className}`}>
+    <fieldset className={`container ${className}`}>
       <textarea
         className="form-control"
         id={`${name}-textarea`}

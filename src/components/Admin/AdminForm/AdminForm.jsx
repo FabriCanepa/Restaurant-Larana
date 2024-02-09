@@ -7,7 +7,6 @@ import Input from "../../Input/Input.jsx";
 import Textarea from "../../Textarea/Textarea.jsx";
 import ToggleSwitch from "../../ToggleSwitch/ToggleSwitch.jsx";
 
-
 import { useMutation } from "@tanstack/react-query";
 import { postProductsFn } from "../../../api/products.js";
 
@@ -46,7 +45,7 @@ const AdminForm = () => {
 
   return (
     <form className="productForm py-5" onSubmit={onSubmitRHF(handleSubmit)}>
-      <h1 className="py-4 adminTitle text-center">Create Product</h1>
+      <h1 className="py-4 adminTitle text-center">Create new menu</h1>
       <Input
         register={register}
         options={{
@@ -106,7 +105,9 @@ const AdminForm = () => {
         name="available"
         error={!!errors.available}
       />
-      <button className="btn bg-primary" type="submit">save</button>
+      <button className="btn" id="btnProduct" type="submit">
+        Create new menu
+      </button>
     </form>
   );
 };
