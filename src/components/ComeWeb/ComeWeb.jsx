@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
+import { useSession } from "../../stores/useSession";
 
 import "./ComeWeb.css";
 
-import LogoPng from "../../assets/images/Logo.png"
+import icono from "../../assets/Logo.png";
 
 const ComeWeb = () => {
+  const { isLoggedIn } = useSession();
   return (
     <>
       <section className="joinPage text-center">
-        <Link to="/" className="btn mb-5">
-          Come In!
-        </Link>
+      <Link to={isLoggedIn ? "/menu" : "/login"} className="btn mb-5">
+        Come In!
+      </Link>
         <h2 className="mb-5">
           Welcome to our culinary world where elegance meets flavor.
         </h2>
-        <img src={LogoPng} alt="Logo Larana" />
+        <img src={icono} alt="Logo Larana" />
       </section>
       <section className="previewPage text-center">
         <h2>Featured Products</h2>

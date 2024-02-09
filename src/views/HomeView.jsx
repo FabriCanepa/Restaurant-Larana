@@ -1,6 +1,10 @@
+import ComeWeb from "../components/ComeWeb/ComeWeb.jsx";
+
 const HomeView = () => {
   return (
-    <div>HomeView</div>
-  )
-}
-export default HomeView
+    <>
+      <ComeWeb />
+    </>
+  );
+};
+export default HomeView;
