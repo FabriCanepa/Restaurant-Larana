@@ -46,7 +46,7 @@ const ComeWeb = () => {
           />
           <div>
             <p>
-              Lasagna Recipe mozzarella cheese, lasagna noodle
+              Lasagna Recipe mozzarella cheese & lasagna noodle
             </p>
           </div>
         </article>
