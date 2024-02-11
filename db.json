@@ -1,12 +1,36 @@
 {
   "products": [
     {
-      "id": "ca2a8c80-b4d3-4f7e-b715-0837e4857968",
       "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
-      "name": "Mauricio",
+      "name": "nelson",
       "cost": "2",
       "ingredients": "asfsassdas",
+      "available": true,
+      "id": "ca2a8c80-b4d3-4f7e-b715-0837e4857968"
+    },
+    {
+      "id": "3c748905-ed6a-401b-bd46-860da6e8256f",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "Pancho",
+      "cost": "2",
+      "ingredients": "salchica y pan",
       "available": true
+    },
+    {
+      "id": "8a03d1a9-fe71-438f-b2c9-11e4449ef609",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
+      "name": "Hamburguesa",
+      "cost": "6",
+      "ingredients": " 2 Medallones de carne, queso cheddar, savora, mayonesa.",
+      "available": true
+    },
+    {
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "mila",
+      "cost": "9",
+      "ingredients": "sdasdasd",
+      "available": false,
+      "id": "576734ea-4fe2-47fd-bd45-ba66f6dfe483"
     }
   ],
   "users": [

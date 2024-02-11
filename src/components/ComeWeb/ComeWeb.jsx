@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./ComeWeb.css";
 
-import LogoPng from "../../assets/images/Logo.png"
+import LogoPng from "../../assets/Logo.png"
 
 const ComeWeb = () => {
   return (

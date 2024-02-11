@@ -1,0 +1,19 @@
+#containerCard {
+  background: #4D000D;
+  color: #e8d191;
+  padding:10px;
+}
+
+#btnEdit {
+  background: #8B0000;
+  color: #e8d191;
+}
+
+#adminImg {
+  height: 137px;
+  object-fit: cover;
+}
+
+#foodPrice {
+  color: #e8d191;
+}
