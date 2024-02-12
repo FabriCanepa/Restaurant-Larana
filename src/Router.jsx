@@ -9,6 +9,7 @@ import AboutUsView from "./views/AboutUsView";
 import ErrorView from "./views/ErrorView";
 import Navbar from "./components/Common/Navbar";
 import UserProfileView from "./views/UserProfileView";
+import ContactView from "./views/ContactView";
 
 import NavbarLarge from "./components/Common/NavbarLarge";
 import Footer from "./components/Common/Footer";
@@ -45,6 +46,7 @@ const Router = () => {
             path="/admin"
             element={user?.isAdmin ? <AdminView /> : <Navigate to="/" />}
           />
+          <Route path="/contact" element={<ContactView/>}/>
           <Route path="/aboutus" element={<AboutUsView />} />
           <Route path="*" element={<ErrorView />} />
         </Routes>
