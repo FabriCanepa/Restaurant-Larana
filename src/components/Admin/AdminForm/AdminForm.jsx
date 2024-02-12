@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { generateId } from "../../../helpers/helpers.js";
+
 import { toast } from "sonner";
 import Swal from "sweetalert2";
 
@@ -7,7 +7,7 @@ import Input from "../../Input/Input.jsx";
 import Textarea from "../../Textarea/Textarea.jsx";
 import ToggleSwitch from "../../ToggleSwitch/ToggleSwitch.jsx";
 
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { postProductsFn } from "../../../api/products.js";
 
 import "./AdminForm.css";
@@ -19,6 +19,8 @@ const AdminForm = () => {
     formState: { errors },
     reset,
   } = useForm();
+ 
+  const queryClient = useQueryClient();
 
   const { mutate: postProducts } = useMutation({
     mutationFn: postProductsFn,
@@ -27,6 +29,8 @@ const AdminForm = () => {
       toast.success("Producto guardado correctamente");
 
       reset();
+
+      queryClient.invalidateQueries("products")
     },
     onError: () => {
       Swal.close();
@@ -36,11 +40,8 @@ const AdminForm = () => {
 
   const handleSubmit = (data) => {
     console.log(data);
-
     Swal.showLoading();
-
-    const newProduct = { ...data, id: generateId() };
-    postProducts(newProduct);
+    postProducts(data);
   };
 
   return (

@@ -5,7 +5,6 @@ const AdminView = () => {
   return (
     <>
     <Admin />
-    <br />
     <AdminProduct />
     </>
   )
