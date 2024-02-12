@@ -29,7 +29,9 @@ export const postUserFn = async (data) => {
 };
 
 export const putUserFn = async (data) => {
-  const apiUrl = `${API_URL}/users/${data.id}`;
+  const apiUrl = `${API_URL}/users/${
+data.id
+}`;
  
 
   const res = await fetch(apiUrl, {
@@ -46,4 +48,4 @@ export const putUserFn = async (data) => {
       `Error al guardar el USUARIO: ${res.status} - ${res.statusText}. Detalles: ${errorMessage}`,
     );
   }
-};
+}; 
