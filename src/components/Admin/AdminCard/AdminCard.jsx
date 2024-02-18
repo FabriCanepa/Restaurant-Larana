@@ -1,31 +1,31 @@
-
-import "./AdminCard.css"
+import "./AdminCard.css";
 
 const AdminCard = ({ product, openModal }) => {
-
-
   return (
-    <div className="card shadow col-12 col-md-2" id='containerCard'>
+    <div className="card shadow col-sm-12 col-md-3 col-lg-2" id="containerCard">
       <div>
-        <img src={product.image} className="w-100" id='adminImg' alt={product.name} />
+        <img src={product.image} className="w-100" id="adminImg" alt={product.name} />
       </div>
-      <div className="d-flex justify-content-between align-items-baseline my-3">
-        <h5>{product.name}</h5>
-        <p id='foodPrice'>${product.cost}</p>
+      <div className="d-flex flex-column justify-content-between align-items-center my-3">
+        <div>
+          <h5>{product.name}</h5>
+          <p id="foodPrice">${product.cost}</p>
+        </div>
       </div>
-      <div className="d-flex justify-content-center">
+      <div className="mt-auto">
         <button
-          className="btn  w-100"
-          id='btnEdit'
+          className="btn w-100"
+          id="btnEdit"
           onClick={() => openModal(product)}
           data-bs-toggle="modal"
           data-bs-target="#modalCard"
-        >
+          >
           Editar
         </button>
-      </div>
+          </div>
     </div>
   );
 };
 
 export default AdminCard;
+

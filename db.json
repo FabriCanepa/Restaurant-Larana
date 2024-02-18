@@ -79,14 +79,6 @@
       "cost": "5",
       "ingredients": "piazaaa",
       "available": false
-    },
-    {
-      "id": "9be6",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
-      "name": "mila",
-      "cost": "500",
-      "ingredients": "jjgghjhjghgjl",
-      "available": false
     }
   ],
   "users": [

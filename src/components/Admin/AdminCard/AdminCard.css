@@ -7,6 +7,8 @@
 #btnEdit {
   background: #8B0000;
   color: #e8d191;
+  display: flex;
+  align-items: end;
 }
 
 #adminImg {

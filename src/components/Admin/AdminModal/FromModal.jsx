@@ -8,6 +8,8 @@ import Input from "../../Input/Input";
 import Textarea from "../../Textarea/Textarea";
 import ToggleSwitch from "../../ToggleSwitch/ToggleSwitch";
 
+import "./AdminModal.css"
+
 const FormModal = ({ product, closeModal }) => {
 
   const queryClient = useQueryClient();
@@ -81,7 +83,7 @@ const FormModal = ({ product, closeModal }) => {
   };
 
   return (
-    <form className="card-body" onSubmit={onSubmitRHF(handleSubmit)}>
+    <form className="card-body form" onSubmit={onSubmitRHF(handleSubmit)}>
               <Input
                 register={register}
                 options={{

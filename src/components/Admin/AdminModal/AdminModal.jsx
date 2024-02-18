@@ -1,5 +1,6 @@
 import FormModal from './FromModal';
-// import './AdminModal.css';
+
+import "./AdminModal.css"
 
 const AdminModal = ({ product, closeModal }) => {
 
@@ -13,9 +14,9 @@ const AdminModal = ({ product, closeModal }) => {
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div className="modal-dialog ">
-        <div className="modal-content">
-          <div className="card customModal mb-1 mx-3">
+      <div className="modal-dialog">
+        <div className="modal-content editModal">
+          <div className="card customModal mb-1 mx-3 editModal">
             <button
               type="button"
               className="btn-close p-3"

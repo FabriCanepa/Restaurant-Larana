@@ -11,7 +11,8 @@ const Card = (props) => {
   };
 
   return (
-    <article className="menuCard card d-flex flex-row my-2">
+    <section className="row">
+    <article className="menuCard card col-sm-12 col-md-4 col-lg-3 my-2">
       <div className="menuImage">
         <img src={product.image} className="object-fit-cover" alt={product.name} />
       </div>
@@ -20,15 +21,16 @@ const Card = (props) => {
         <p className="foodPrice">${product.cost}</p>
         <p className="ingredients">{shortText(product.ingredients)}</p>
       </div>
-      <div className="d-flex align-items-center px-4">
-        <button
-          className="button-add"
-          onClick={() => openModal(product)}
-          data-bs-toggle="modal"
-          data-bs-target="#modalCard"
-        ></button>
+      <div className="d-flex px-4">
+      <button
+      className="button-add d-flex"
+      onClick={() => openModal(product)}
+      data-bs-toggle="modal"
+      data-bs-target="#modalCard"
+      ></button>
       </div>
     </article>
+      </section>
   );
 };
 
