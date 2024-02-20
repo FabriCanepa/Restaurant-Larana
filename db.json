@@ -1,27 +1,100 @@
 {
-  "products": [],
+  "products": [
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "nelson",
+      "cost": "2",
+      "ingredients": "asfsassdas",
+      "available": true,
+      "id": "ca2a8c80-b4d3-4f7e-b715-0837e4857968"
+    },
+    {
+      "id": "3c748905-ed6a-401b-bd46-860da6e8256f",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "Pancho",
+      "cost": "2",
+      "ingredients": "salchica y pan",
+      "available": true
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
+      "name": "melon",
+      "cost": "6",
+      "ingredients": " 2 Medallones de carne, queso cheddar, savora, mayonesa.",
+      "available": true,
+      "id": "8a03d1a9-fe71-438f-b2c9-11e4449ef609"
+    },
+    {
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "pancho",
+      "cost": "50",
+      "ingredients": "sdasdasd",
+      "available": false,
+      "id": "576734ea-4fe2-47fd-bd45-ba66f6dfe483"
+    },
+    {
+      "id": "b2a21d7a-8d66-48ec-980e-1056f27c8e99",
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "enzo",
+      "cost": "9",
+      "ingredients": "asdasdad",
+      "available": true
+    },
+    {
+      "id": "0ccfb98e-957c-455a-86f2-b95eda694aed",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "Pizasss",
+      "cost": "2",
+      "ingredients": "asssss",
+      "available": false
+    },
+    {
+      "id": "af142d5c-0955-47a6-8263-a8bc0b4da71c",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1d/75/44/31/milanesas-americana-vs.jpg",
+      "name": "Milanesa americana",
+      "cost": "4",
+      "ingredients": "mila panceta",
+      "available": true
+    },
+    {
+      "id": "142539a0-8960-42a5-912c-b4fd19505625",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "5654654",
+      "cost": "556",
+      "ingredients": "sfafasfaf",
+      "available": false
+    },
+    {
+      "id": "faf26d43-02d9-4425-b16a-15e15c3e83d2",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "Alexis Mauricio Gussett",
+      "cost": "150",
+      "ingredients": "mau mu ma",
+      "available": false
+    },
+    {
+      "id": "a615",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "Epanada",
+      "cost": "5",
+      "ingredients": "piazaaa",
+      "available": false
+    }
+  ],
   "users": [
     {
-      "firstname": "Mausdss",
+      "firstname": "Mau",
       "lastname": "Gunsett",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
       "isAdmin": true,
-      "id": "af09"
+      "id": "871e"
     },
     {
-      "id": "6b20",
-      "firstname": "Enzo",
-      "lastname": "igo",
-      "email": "enzogay@gay.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false
-    },
-    {
-      "id": "4deb",
-      "firstname": "alexis",
+      "id": "966f",
+      "firstname": "Mauricio",
       "lastname": "Gunsett",
-      "email": "mau3351@gmail.com",
+      "email": "grillnthrill@gmail.com",
       "password": "aA1*bbbb",
       "isAdmin": false
     }

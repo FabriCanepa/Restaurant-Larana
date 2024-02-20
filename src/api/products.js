@@ -45,5 +45,4 @@ export const deleteProductsFn = async (productId) => {
 
   if (!res.ok) {
     throw new Error('Ocurrió un error al eliminar el producto!');
-  }
-};
+  }}
