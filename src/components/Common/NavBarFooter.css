@@ -32,6 +32,11 @@ a svg {
   color: #e8d191;
   background: #8B0000;
  }
+ .navCursor:hover {
+  background-color: #742f2f;
+  border-radius: 10px;
+  border-bottom: solid 1px;  
+}
 
 @media screen and (max-width: 745px) {
   #large {

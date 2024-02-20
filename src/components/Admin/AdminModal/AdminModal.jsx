@@ -1,10 +1,8 @@
-import FormModal from './FromModal';
+import FormModal from "./FromModal";
 
-import "./AdminModal.css"
+import "./AdminModal.css";
 
 const AdminModal = ({ product, closeModal }) => {
-
-
   return (
     <article
       className="modal fade"
@@ -15,8 +13,8 @@ const AdminModal = ({ product, closeModal }) => {
       aria-hidden="true"
     >
       <div className="modal-dialog">
-        <div className="modal-content editModal">
-          <div className="card customModal mb-1 mx-3 editModal">
+        <div className="modal-content" id="editModal">
+          <div className="card customModal mb-1 mx-3" id="editModal">
             <button
               type="button"
               className="btn-close p-3"
@@ -25,11 +23,11 @@ const AdminModal = ({ product, closeModal }) => {
               onClick={closeModal}
             ></button>
             <img
-              src={product ? product.image : ''}
+              src={product ? product.image : ""}
               className="card-img-top"
-              alt={product ? product.name : ''}
+              alt={product ? product.name : ""}
             />
-            <FormModal product={product} closeModal={closeModal}/>
+            <FormModal product={product} closeModal={closeModal} />
           </div>
         </div>
       </div>

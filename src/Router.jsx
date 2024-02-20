@@ -11,6 +11,7 @@ import AboutUsView from "./views/AboutUsView";
 import ErrorView from "./views/ErrorView";
 import Navbar from "./components/Common/Navbar";
 import UserProfileView from "./views/UserProfileView";
+import ContactView from "./views/ContactView";
 
 import NavbarLarge from "./components/Common/NavbarLarge";
 import Footer from "./components/Common/Footer";
@@ -44,14 +45,14 @@ const Router = () => {
             path="/register"
             element={isLoggedIn ? <Navigate to="/" /> : <RegisterView />}
           />
+          <Route path="/contact" element={<ContactView />} />
+          <Route path="/admin" />
           <Route
             path="/admin"
-            
-          />
-           <Route path="/admin" element={user?.isAdmin ? <AdminView /> : <Navigate to="/" />}>
+            element={user?.isAdmin ? <AdminView /> : <Navigate to="/" />}
+          >
             <Route index element={<AdminProduct />} />
           </Route>
-
 
           <Route path="/aboutus" element={<AboutUsView />} />
           <Route path="*" element={<ErrorView />} />

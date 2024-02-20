@@ -35,37 +35,37 @@ const NavbarLarge = () => {
           <img src={icono} alt="icono restaurante" width="150" height="150" />
         </div>
         <ul className="list-unstyled d-flex w-100 mx-1">
-          <li className="flex-fill text-center">
+          <li className="flex-fill text-center navCursor">
             <NavLink className={`nav-link`} to="/menu">
               Menu
             </NavLink>
           </li>
-          <li className="flex-fill text-center">
+          <li className="flex-fill text-center navCursor">
             <NavLink className={`nav-link`} to="/products">
               Products
             </NavLink>
           </li>
-          <li className="flex-fill text-center">
+          <li className="flex-fill text-center navCursor">
             <NavLink className={"nav-link"} to="/aboutUs">
               About us
             </NavLink>
           </li>
           {!isLoggedIn && (
-            <li className="flex-fill text-center">
+            <li className="flex-fill text-center navCursor">
               <NavLink className={"nav-link"} to="/Login">
                 Login
               </NavLink>
             </li>
           )}
           {isLoggedIn && (
-            <li className="flex-fill text-center">
+            <li className="flex-fill text-center navCursor">
               <NavLink className={"nav-link"} to="/profile">
                 Profile
               </NavLink>
             </li>
           )}
           {user?.isAdmin && (
-            <li className="flex-fill text-center">
+            <li className="flex-fill text-center navCursor">
               <NavLink className={"nav-link"} to="/admin">
                 Admin
               </NavLink>
