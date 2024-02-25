@@ -1,3 +1,4 @@
+
 import { useQuery } from "@tanstack/react-query";
 
 import { getProductsFn } from "../api/products.js";
@@ -39,3 +40,4 @@ const MenuView = () => {
   );
 };
 export default MenuView;
+

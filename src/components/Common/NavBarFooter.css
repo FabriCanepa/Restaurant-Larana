@@ -1,13 +1,14 @@
 /* Navbar mobile*/
 .navbar {
-  width: 100%;
-  background-color: #160404;
-  border-top: 1px solid #f3f3f3;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 1000;
-}
+    width: 100%;
+    background-color: #160404;
+    border-top: 1px solid #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+  }
+
 
 a svg {
 
@@ -21,6 +22,20 @@ a svg {
   background-color: #4d000d;
   width: 100%;
   color: #e8d191;
+}
+
+#btnLogout{
+  color: #e8d191;
+  background: #8B0000;}
+
+#btnLogoutMovil{
+  color: #e8d191;
+  background: #8B0000;
+ }
+ .navCursor:hover {
+  background-color: #742f2f;
+  border-radius: 10px;
+  border-bottom: solid 1px;  
 }
 
 @media screen and (max-width: 745px) {
@@ -40,6 +55,11 @@ a svg {
   }
 } 
 
+@media screen and (min-width: 746px) {
+  #btnLogoutMovil {
+    display: none;
+  }
+} 
  /* ------------FOOTER------------*/
 
 footer {
@@ -54,3 +74,4 @@ footer a {
 footer svg {
   color: #e8d191;
 }
+
