@@ -36,8 +36,8 @@ const Menu = (props) => {
   };
 
   const shortText = (text) => {
-    if (text.length > 40) {
-      return text.substring(0, 40) + "...";
+    if (text.length > 90) {
+      return text.substring(0, 90) + "...";
     }
     return text;
   };
@@ -52,13 +52,12 @@ const Menu = (props) => {
         <div className="menuText ms-3">
           <h5 className="foodTitle">{product.name}</h5>
           <p className="foodInfo">{shortText(product.ingredients)}</p>
-          <p className="foodPrice">{product.cost}</p>
+          <p className="foodPrice">${product.cost}</p>
         </div>
         <div className="menuImage">
           <img src={product.image} alt={product.name} />
         </div>
       </article>
-      <div />
 
       <div
         className="modal fade"
@@ -90,7 +89,7 @@ const Menu = (props) => {
                 <div className="scrollText">
                   <p className="card-text">{product.ingredients}</p>
                 </div>
-                <h6 className="foodPrice mt-2">{product.cost}</h6>
+                <h6 className="foodPrice mt-2">${product.cost}</h6>
                 <div className="text-center">
                   <button
                     className="customBtnModal"
