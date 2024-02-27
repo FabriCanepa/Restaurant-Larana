@@ -29,10 +29,10 @@ const NavbarLarge = () => {
   };
 
   return (
-    <header className="py-3 my-3" id="large">
+    <header className="py-4 my-5" id="large">
       <nav className="navlarge d-flex align-items-center fixed-top">
         <div>
-          <img src={icono} alt="icono restaurante" width="150" height="150" />
+          <img src={icono} alt="icono restaurante" width="140" height="140" />
         </div>
         <ul className="list-unstyled d-flex w-100 mx-1">
           <li className="flex-fill text-center navCursor">
@@ -41,13 +41,18 @@ const NavbarLarge = () => {
             </NavLink>
           </li>
           <li className="flex-fill text-center navCursor">
-            <NavLink className={`nav-link`} to="/products">
-              Products
+            <NavLink className={"nav-link"} to="/aboutUs">
+              About us
             </NavLink>
           </li>
           <li className="flex-fill text-center navCursor">
-            <NavLink className={"nav-link"} to="/aboutUs">
-              About us
+            <NavLink className={"nav-link"} to="/contact">
+            Contact
+            </NavLink>
+          </li>
+          <li className="flex-fill text-center navCursor">
+            <NavLink className={"nav-link"} to="/cart">
+             Cart
             </NavLink>
           </li>
           {!isLoggedIn && (

@@ -15,6 +15,10 @@ a svg {
   font-size: 40px;
   color: #4D000D;
 }
+#styleLogout {
+  color: #e8d191;
+}
+
 
 /* Navbar large */ 
 
@@ -26,7 +30,9 @@ a svg {
 
 #btnLogout{
   color: #e8d191;
-  background: #8B0000;}
+  background: #8B0000;
+}
+  
 
 #btnLogoutMovil{
   color: #e8d191;
