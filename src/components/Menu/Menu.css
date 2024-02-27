@@ -1,0 +1,302 @@
+.menuSec {
+  background-color: #4d000d;
+  min-height: 100vh;
+}
+
+.menuSec h1 {
+  color: #e8d191;
+  font-family: "TAN - PEARL";
+}
+
+/* Card Menu */
+
+.menuCard {
+  background-color: #160404;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  height: 115px;
+  align-items: stretch;
+}
+
+.menuText {
+  color: #fff;
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.foodTitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  flex-grow: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.foodInfo {
+  max-height: 10px;
+  max-width: 70%;
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.foodImage {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.menuImage {
+  width: 200px;
+}
+
+.menuImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+}
+
+/* Modal */
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin-top: 8rem;
+  border: none !important;
+}
+
+.customModal {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.card-title {
+  font-family: "Nunito";
+}
+
+.card-text {
+  font-family: "Nunito";
+}
+
+.card-body {
+  background-color: #2e0008;
+  border: none;
+  filter: brightness(1.1) !important;
+}
+
+.foodInfo {
+  color: #a5a5a5;
+}
+
+.foodPrice {
+  color: #730014;
+  font-family: "Nunito";
+}
+
+.menuText h5,
+.menuText p {
+  margin: 0;
+}
+
+.card-text {
+  color: #a5a5a5;
+}
+
+.card-body h5 {
+  color: #fff;
+  font-size: 23px;
+  line-height: normal;
+  border: none;
+}
+
+.customBtnModal {
+  font-family: "Nunito";
+}
+
+.scrollText {
+  overflow-y: auto;
+  max-height: 400px;
+  scroll-behavior: smooth;
+}
+
+.scrollText::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollText::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.scrollText::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .menuSec h1 {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 28px;
+  }
+
+  /* CARD-MENU */
+  .menuCard {
+    background-color: #160404;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    height: 115px;
+    align-items: stretch;
+  }
+
+  .foodInfo {
+    max-height: 50px;
+    max-width: 100%;
+    line-height: normal;
+    margin-bottom: 6px !important;
+    font-size: 9px;
+  }
+
+  .foodPrice {
+    font-size: 14px;
+  }
+
+  .menuText {
+    color: #a5a5a5;
+  }
+
+  .menuImage {
+    width: 30%;
+  }
+
+  .menuImage img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+  }
+
+  /* MODAL-MENU */
+  .btn-close {
+    background-color: #ca0c2b;
+  }
+
+  .scrollText {
+    max-height: 125px !important;
+    overflow: auto;
+  }
+
+  .modal-content {
+    margin-top: 5rem !important;
+  }
+
+  .customBtnModal {
+    width: 70%;
+    background-color: #730014;
+    color: #e8d191;
+    border: none;
+    border-radius: 40px;
+    font-size: 23px;
+  }
+
+  .customModal img {
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuCard {
+    background-color: #160404;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    height: 115px;
+    align-items: stretch;
+  }
+
+  .menuImage {
+    width: 30%;
+  }
+
+  .menuImage img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+  }
+
+  .menuText h5,
+  .menuText p {
+    margin: 0;
+  }
+
+  .customBtnModal {
+    width: 70%;
+    background-color: #730014;
+    color: #e8d191;
+    border: none;
+    border-radius: 40px;
+    font-size: 23px;
+  }
+
+  .customModal img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+
+  .scrollText {
+    max-height: 150px;
+    overflow: auto;
+  }
+
+  .foodInfo {
+    max-height: 50px;
+    max-width: 80%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .menuSec h1 {
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    margin-top: 120px;
+  }
+
+  .menuProducts {
+    display: flex;
+    gap: 29px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+  }
+
+  .cardContainer {
+    width: 400px;
+  }
+
+  .menuImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
