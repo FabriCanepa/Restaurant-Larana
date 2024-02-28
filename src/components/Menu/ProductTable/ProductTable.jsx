@@ -1,14 +1,16 @@
-import Card from "../Card/Card";
+import Menu from "../Menu";
 
 const ProductTable = (props) => {
-  const { products = [], openModal } = props;
+  const { products } = props;
+
+// const filteredProducts =
 
   return (
-    <div className="products-table d-flex flex-wrap justify-content-center">
+    <>
       {products.map((product) => (
-        <Card product={product} openModal={openModal} key={product.id} />
+        <Menu product={product} key={product.id} />
       ))}
-    </div>
+    </>
   );
 };
 
