@@ -37,9 +37,9 @@ const Navbar = () => {
 
   return (
     <header id="mobile">
-  <div className="fixed-top d-flex justify-content-end p-2" id="styleLogout">
+  <div className="fixed-top d-flex justify-content-end p-2">
         {isLoggedIn && (
-          <button  className="btn" type="button" onClick={handleLogout}> <MdLogout />
+          <button  className="btn" id="styleLogout" type="button" onClick={handleLogout}> <MdLogout />
           </button>
            )}
      </div>

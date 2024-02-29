@@ -15,10 +15,12 @@ a svg {
   font-size: 40px;
   color: #4D000D;
 }
-#styleLogout {
-  color: #e8d191;
-}
 
+#styleLogout {
+  
+  color: #e8d191;
+  background: #8B0000;
+}
 
 /* Navbar large */ 
 
