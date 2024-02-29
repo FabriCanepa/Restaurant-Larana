@@ -57,6 +57,14 @@
       "email": "grillnthrill@gmail.com",
       "password": "aA1*bbbb",
       "isAdmin": false
+    },
+    {
+      "id": "1386",
+      "firstname": "Enzo",
+      "lastname": "Iñigo",
+      "email": "enzoinigo@gmail.com",
+      "password": "Atletic0",
+      "isAdmin": false
     }
   ]
 }
