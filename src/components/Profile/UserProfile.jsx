@@ -100,7 +100,7 @@ const Profile = () => {
   };
 
   return (
-    <section className="container perfilContainer text-center">
+    <section className="container perfilContainer text-center mt-2">
       <form onSubmit={onSubmitRHF(handleSubmit)}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/800px-User-avatar.svg.png"

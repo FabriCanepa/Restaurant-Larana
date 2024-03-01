@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProductsFn } from "../../../api/products.js";
 import { useEffect, useState } from "react";
 
-import { useProduct } from "../../../stores/useProducts.js";
+import { useProduct } from "../../../stores/useProduct.js";
 import AdminTable from "../AdminTable/AdminTable.jsx";
 import AdminModal from "../AdminModal/AdminModal.jsx";
 
