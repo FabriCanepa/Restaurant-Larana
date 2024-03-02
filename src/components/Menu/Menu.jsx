@@ -15,7 +15,6 @@ const Menu = (props) => {
   const handleSubmit = async () => {
     // llevo producto a json server (cart)
     addProductToCart(product);
-
     const res = await addToCartFn(cart);
     console.log(res);
     const Toast = Swal.mixin({

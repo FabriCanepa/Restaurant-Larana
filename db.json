@@ -2,7 +2,7 @@
   "products": [
     {
       "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
-      "name": "nelson",
+      "name": "Piza",
       "cost": "2",
       "ingredients": "asfsassdas",
       "available": true,
@@ -33,17 +33,25 @@
       "available": true
     },
     {
-      "id": "876c",
-      "image": "https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
-      "name": "Comida Casera Op",
-      "cost": "650",
-      "ingredients": "Plato elaborado a base de carne fresca y vegetales recién cosechados",
+      "id": "bcb3",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "Pancho",
+      "cost": "48",
+      "ingredients": "<zx<zx<zx<zx",
       "available": true
+    },
+    {
+      "id": "d7d5",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "sasasdfsa",
+      "cost": "555",
+      "ingredients": "asdasdasd",
+      "available": false
     }
   ],
   "users": [
     {
-      "firstname": "Mau",
+      "firstname": "Mauricio",
       "lastname": "Gunsett",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
@@ -59,12 +67,13 @@
       "isAdmin": false
     },
     {
-      "id": "1386",
-      "firstname": "Enzo",
-      "lastname": "Iñigo",
-      "email": "enzoinigo@gmail.com",
-      "password": "Atletic0",
+      "id": "a7a2",
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
       "isAdmin": false
     }
-  ]
+  ],
+  "cart": []
 }
