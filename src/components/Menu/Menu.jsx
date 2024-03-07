@@ -1,22 +1,19 @@
 import Swal from "sweetalert2";
 
-import { addToCartFn } from "../../api/products";
-
-import useCart from "../../stores/useCart";
-
 import "./Menu.css";
+
+import useCart from "../../stores/useCart.js";
 
 const Menu = (props) => {
   const { product } = props;
+  
+  const { addItemToCart } = useCart();
 
-  const addProductToCart = useCart((state) => state.addProductToCart);
-  const cart = useCart((state) => state.cart);
+  const onAddToCart = () => {
+    addItemToCart(product);
 
-  const handleSubmit = async () => {
-    // llevo producto a json server (cart)
-    addProductToCart(product);
-    const res = await addToCartFn(cart);
-    console.log(res);
+
+
     const Toast = Swal.mixin({
       toast: true,
       position: "bottom-end",
@@ -93,7 +90,7 @@ const Menu = (props) => {
                   <button
                     className="customBtnModal"
                     type="submit"
-                    onClick={handleSubmit}
+                    onClick={onAddToCart}
                   >
                     Add to cart
                   </button>
