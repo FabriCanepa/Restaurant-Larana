@@ -1,6 +1,8 @@
-const Cart = () => {
-  return (
-    <div>Cart</div>
-  )
-}
-export default Cart
+// const Cart = () => {
+//   const {product} = useCart();
+
+//   return (
+//     <div>{product}</div>
+//   )
+// }
+// export default Cart

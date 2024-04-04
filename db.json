@@ -47,6 +47,14 @@
       "cost": "555",
       "ingredients": "asdasdasd",
       "available": false
+    },
+    {
+      "id": "dcf4",
+      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+      "name": "nicop",
+      "cost": "48",
+      "ingredients": "sdasdasdasd",
+      "available": true
     }
   ],
   "users": [
@@ -75,5 +83,90 @@
       "isAdmin": false
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "b407",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+            "name": "Piza",
+            "cost": "2",
+            "ingredients": "asfsassdas",
+            "available": true,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d13",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+            "name": "Piza",
+            "cost": "2",
+            "ingredients": "asfsassdas",
+            "available": true,
+            "quantity": 1
+          },
+          {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
+            "name": "melon",
+            "cost": "6",
+            "ingredients": " 2 Medallones de carne, queso cheddar, savora, mayonesa.",
+            "available": true,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "3f9a",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+            "name": "Piza",
+            "cost": "2",
+            "ingredients": "asfsassdas",
+            "available": true,
+            "quantity": 3
+          },
+          {
+            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+            "name": "enzo",
+            "cost": "9",
+            "ingredients": "asdasdad",
+            "available": true,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "1c4d",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+            "name": "Piza",
+            "cost": "2",
+            "ingredients": "asfsassdas",
+            "available": true,
+            "quantity": 2
+          },
+          {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
+            "name": "melon",
+            "cost": "6",
+            "ingredients": " 2 Medallones de carne, queso cheddar, savora, mayonesa.",
+            "available": true,
+            "quantity": 2
+          }
+        ]
+      }
+    }
+  ]
 }
