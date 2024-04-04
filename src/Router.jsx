@@ -11,6 +11,7 @@ import Navbar from "./components/Common/Navbar";
 import UserProfileView from "./views/UserProfileView";
 import ContactView from "./views/ContactView";
 import ComeWebView from "./views/ComeWebView";
+import CartView from "./views/CartView";
 
 import NavbarLarge from "./components/Common/NavbarLarge";
 import Footer from "./components/Common/Footer";
@@ -29,6 +30,7 @@ const Router = () => {
         <Routes>
           <Route path="/" element={<ComeWebView />} />
           <Route path="/menu" element={<MenuView />} />
+          <Route path="/cart" element={<CartView />} /> 
           <Route
             path="/profile"
             element={

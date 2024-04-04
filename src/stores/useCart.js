@@ -1,10 +1,9 @@
 import { create } from "zustand";
-import { addToCartFn } from "../api/products.js";
 
 const useCart = create((set, get) => ({
   cartItems: [],
 
-  addItemToCart: async (item) => {
+  addItemToCart: (item) => {
     const itemExists = get().cartItems.find(
       (cartItem) => cartItem.id === item.id
     );
@@ -15,15 +14,8 @@ const useCart = create((set, get) => ({
     } else {
       set({ cartItems: [...get().cartItems, { ...item, quantity: 1 }] });
     }
-
-    const sendToServer = async () => {
-      await addToCartFn(get().cartItems);
-    };
-
-    // Llama a la función asíncrona
-    await sendToServer();
   },
+  clearProductOrder: () => set({ cartItems: [] }),
 }));
-
 
 export default useCart;
