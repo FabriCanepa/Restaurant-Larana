@@ -1,10 +1,10 @@
 import ComeWeb from "../components/ComeWeb/ComeWeb.jsx";
 
-const HomeView = () => {
+const ComeWebView = () => {
   return (
     <>
       <ComeWeb />
     </>
   );
 };
-export default HomeView;
+export default ComeWebView;

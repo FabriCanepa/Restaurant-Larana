@@ -75,5 +75,29 @@
       "isAdmin": false
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "9553",
+      "cartItems": {
+        "cartItems": [
+          {
+            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+            "name": "Piza",
+            "cost": "2",
+            "ingredients": "asfsassdas",
+            "available": true,
+            "quantity": 1
+          },
+          {
+            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+            "name": "enzo",
+            "cost": "9",
+            "ingredients": "asdasdad",
+            "available": true,
+            "quantity": 2
+          }
+        ]
+      }
+    }
+  ]
 }
