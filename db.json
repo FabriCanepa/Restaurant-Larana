@@ -23,30 +23,6 @@
       "ingredients": "sdasdasd",
       "available": false,
       "id": "576734ea-4fe2-47fd-bd45-ba66f6dfe483"
-    },
-    {
-      "id": "b2a21d7a-8d66-48ec-980e-1056f27c8e99",
-      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
-      "name": "enzo",
-      "cost": "9",
-      "ingredients": "asdasdad",
-      "available": true
-    },
-    {
-      "id": "bcb3",
-      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
-      "name": "Pancho",
-      "cost": "48",
-      "ingredients": "<zx<zx<zx<zx",
-      "available": true
-    },
-    {
-      "id": "d7d5",
-      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
-      "name": "sasasdfsa",
-      "cost": "555",
-      "ingredients": "asdasdasd",
-      "available": false
     }
   ],
   "users": [
@@ -77,17 +53,9 @@
   ],
   "cart": [
     {
-      "id": "9553",
-      "cartItems": {
+      "id": "6e00",
+      "cart": {
         "cartItems": [
-          {
-            "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
-            "name": "Piza",
-            "cost": "2",
-            "ingredients": "asfsassdas",
-            "available": true,
-            "quantity": 1
-          },
           {
             "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
             "name": "enzo",
@@ -95,6 +63,14 @@
             "ingredients": "asdasdad",
             "available": true,
             "quantity": 2
+          },
+          {
+            "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
+            "name": "pancho",
+            "cost": "50",
+            "ingredients": "sdasdasd",
+            "available": false,
+            "quantity": 1
           }
         ]
       }
