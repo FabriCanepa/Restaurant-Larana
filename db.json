@@ -33,22 +33,6 @@
       "password": "aA1*bbbb",
       "isAdmin": true,
       "id": "871e"
-    },
-    {
-      "id": "966f",
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "email": "grillnthrill@gmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false
-    },
-    {
-      "id": "a7a2",
-      "firstname": "Nadie",
-      "lastname": "Nadie",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false
     }
   ],
   "cart": [

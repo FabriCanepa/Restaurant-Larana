@@ -73,6 +73,7 @@ const CartView = () => {
           <div key={item.id}>
             <p>{item.name}</p>
             <p>{item.quantity}</p>
+            <p>{item.cost}</p>
           </div>
         ))}
         <button
