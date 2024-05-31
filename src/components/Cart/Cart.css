@@ -1,0 +1,58 @@
+.borderName {
+  border-top: 1px solid;
+}
+.borderTotal {
+  border-bottom: 1px solid;
+}
+
+.btnCart {
+    background-color: #730014;
+    text-decoration: none;
+    width: 280px;
+    height: 58px;
+    color: #e8d191;
+    border-radius: 48px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
+    transition: all 0.2s;
+    border: none;
+    margin-bottom: 20px;
+  
+    &:active {
+      background-color: #460913;
+    }
+  }
+.btnBack {
+  background-color: #730014;
+  text-decoration: none;
+  width: 200px;
+  height: 58px;
+  color: #e8d191;
+  border-radius: 48px;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 16px;
+  transition: all 0.2s;
+  border: none;
+  margin-bottom: 20px;
+
+  &:active {
+    background-color: #460913;
+  }
+}
+.cartImg {
+    width: 280px;
+    object-fit: cover;
+    border-radius: 28px;
+}
+
+.conteinerCard{
+  background-color: #460913;
+  border-radius: 28px;
+  box-shadow: 0 1rem 3rem #0000002d
+}
