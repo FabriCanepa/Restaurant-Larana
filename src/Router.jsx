@@ -18,6 +18,7 @@ import Footer from "./components/Common/Footer";
 
 import "./Router.css";
 import { useSession } from "./stores/useSession";
+import Status from "./views/Status";
 
 
 const Router = () => {
@@ -32,6 +33,7 @@ const Router = () => {
           <Route path="/" element={<ComeWebView />} />
           <Route path="/menu" element={<MenuView />} />
           <Route path="/cart" element={<CartView />} /> 
+          <Route path="/status" element={<Status/>} /> 
           <Route
             path="/profile"
             element={

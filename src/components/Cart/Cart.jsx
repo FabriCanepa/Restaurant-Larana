@@ -16,8 +16,8 @@ const Cart = () => {
       onSuccess: () => {
         toast.success("Your order was succesfully placed.");
         setTimeout(() => {
-          navigate("/state");
-        }, 2000);
+          navigate("/status");
+        }, 1000);
       },
   
       onError: (e) => {
