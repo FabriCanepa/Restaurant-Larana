@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import Swal from "sweetalert2";
 
 const Cart = () => {
-    const { cartItems, clearProductOrder } = useCart();
+  const { cartItems, clearProductOrder } = useCart();
 
     const navigate = useNavigate();
   
@@ -27,7 +27,7 @@ const Cart = () => {
     });
   
     const hadleOrden = () => {
-      if (cartItems.length === 0) {
+      if (Object.keys(cartItems).length === 0) {
         Swal.fire({
           icon: "error",
           title: "Oops...",
@@ -43,7 +43,7 @@ const Cart = () => {
           cancelButtonText: "Cancel",
         }).then((res) => {
           if (res.isConfirmed) {
-            const products = cartItems.map((products) => ({
+            const products = Object.values(cartItems).map((products) => ({
               ...products,
               id: undefined,
             }));
@@ -56,7 +56,8 @@ const Cart = () => {
         });
       }
     };
-  
+    const totalOrderCost = Object.values(cartItems).reduce((total, item) => total + parseFloat(item.cost) * item.quantity, 0);
+
     return (
       <>
         <h1 className="text-center fw-bolder">Restaurant Larana</h1>
@@ -76,15 +77,17 @@ const Cart = () => {
             </NavLink>
           </div>
           
-          {cartItems.map((item) => (
+          {Object.values(cartItems).map((item) => (
             <div className="text-center" key={item.id}>
               <h4 className="py-2 borderName fw-bolder">{item.name}</h4>
               <img className="cartImg" src={item.image} alt="Descripción de la imagen" />
               <h5 className="py-2">Amount: {item.quantity}</h5>
-              <h5 className="py-2 borderTotal">Total: ${item.cost}</h5>
+              <h5 className="py-2 borderTotal">Price: ${item.cost}</h5>
+              
             </div>
+            
           ))}
-          
+           <h4 className="fw-bolder mt-4">Total Order Cost: ${totalOrderCost}</h4>
           </article>
           <section className="row my-3 gap-md-0">
             <article className="col-12 col-md-6">
