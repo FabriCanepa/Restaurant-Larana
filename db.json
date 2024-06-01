@@ -1,28 +1,28 @@
 {
   "products": [
     {
-      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
-      "name": "Piza",
-      "cost": "2",
-      "ingredients": "asfsassdas",
+      "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+      "name": "Classic pizza",
+      "cost": "5000",
+      "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
       "available": true,
       "id": "ca2a8c80-b4d3-4f7e-b715-0837e4857968"
     },
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
-      "name": "melon",
-      "cost": "6",
-      "ingredients": " 2 Medallones de carne, queso cheddar, savora, mayonesa.",
+      "name": "Hamburguesa",
+      "cost": "2000",
+      "ingredients": "Una hamburguesa tradicional que nunca pasa de moda. Incluye una jugosa carne de res, lechuga fresca, tomate maduro, pepinillos crujientes y cebolla, todo en un pan suave. Perfecta para los amantes de lo clásico.",
       "available": true,
       "id": "8a03d1a9-fe71-438f-b2c9-11e4449ef609"
     },
     {
-      "image": "https://img.freepik.com/fotos-premium/pancho_488220-15631.jpg",
-      "name": "pancho",
-      "cost": "50",
-      "ingredients": "sdasdasd",
-      "available": false,
-      "id": "576734ea-4fe2-47fd-bd45-ba66f6dfe483"
+      "id": "f7bd",
+      "image": "https://mandolina.co/wp-content/uploads/2023/04/Receta-Espagueti-con-albondigas.jpg",
+      "name": "Fideos con albondigas",
+      "cost": "3000",
+      "ingredients": "fideos albondigas",
+      "available": true
     }
   ],
   "users": [
@@ -33,22 +33,6 @@
       "password": "aA1*bbbb",
       "isAdmin": true,
       "id": "871e"
-    },
-    {
-      "id": "966f",
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "email": "grillnthrill@gmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false
-    },
-    {
-      "id": "a7a2",
-      "firstname": "Nadie",
-      "lastname": "Nadie",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false
     }
   ],
   "cart": [
@@ -71,6 +55,112 @@
             "ingredients": "sdasdasd",
             "available": false,
             "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "b107",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "4999",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "2550",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
+            "name": "Hamburguesa",
+            "cost": "7000",
+            "ingredients": "Una hamburguesa tradicional que nunca pasa de moda. Incluye una jugosa carne de res, lechuga fresca, tomate maduro, pepinillos crujientes y cebolla, todo en un pan suave. Perfecta para los amantes de lo clásico.",
+            "available": true,
+            "quantity": 1
+          },
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "4999",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "6c9c",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "4999",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "362a",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "4999",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "2f57",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "5000",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 2
+          },
+          {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
+            "name": "Hamburguesa",
+            "cost": "2000",
+            "ingredients": "Una hamburguesa tradicional que nunca pasa de moda. Incluye una jugosa carne de res, lechuga fresca, tomate maduro, pepinillos crujientes y cebolla, todo en un pan suave. Perfecta para los amantes de lo clásico.",
+            "available": true,
+            "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "402c",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "5000",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 2
           }
         ]
       }
