@@ -15,6 +15,14 @@
       "ingredients": "Una hamburguesa tradicional que nunca pasa de moda. Incluye una jugosa carne de res, lechuga fresca, tomate maduro, pepinillos crujientes y cebolla, todo en un pan suave. Perfecta para los amantes de lo clásico.",
       "available": true,
       "id": "8a03d1a9-fe71-438f-b2c9-11e4449ef609"
+    },
+    {
+      "id": "f7bd",
+      "image": "https://mandolina.co/wp-content/uploads/2023/04/Receta-Espagueti-con-albondigas.jpg",
+      "name": "Fideos con albondigas",
+      "cost": "3000",
+      "ingredients": "fideos albondigas",
+      "available": true
     }
   ],
   "users": [
@@ -138,6 +146,21 @@
             "ingredients": "Una hamburguesa tradicional que nunca pasa de moda. Incluye una jugosa carne de res, lechuga fresca, tomate maduro, pepinillos crujientes y cebolla, todo en un pan suave. Perfecta para los amantes de lo clásico.",
             "available": true,
             "quantity": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "402c",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "5000",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 2
           }
         ]
       }
