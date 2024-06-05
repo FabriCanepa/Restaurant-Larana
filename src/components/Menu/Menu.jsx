@@ -1,21 +1,44 @@
 import Swal from "sweetalert2";
+import useCart from "../../stores/useCart.js";
+
+import { FaPlus, FaMinus } from "react-icons/fa";
+import { useState } from "react";
 
 import "./Menu.css";
-
-import useCart from "../../stores/useCart.js";
 
 const Menu = (props) => {
   const { product } = props;
   const { addItemToCart } = useCart();
 
-  const onAddToCart = () => {
-    addItemToCart(product);
+  const [productQuantity, setProductQuantity] = useState(0);
 
-    Swal.fire({
-      icon: "success",
-      title: "Product added to cart!",
-      text: `${product.name} has been added to your cart.`,
-    });
+  const onAddToCart = () => {
+    if (productQuantity > 0) {
+      addItemToCart(product, productQuantity);
+
+      Swal.fire({
+        icon: "success",
+        title: "Product added to cart!",
+        text: `${productQuantity} ${product.name}(s) has been added to your cart.`,
+      });
+      setProductQuantity(0);
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "No quantity selected",
+        text: "Please select at least one item to add to your cart.",
+      });
+    }
+  };
+
+  const incrementQuantity = () => {
+    setProductQuantity(productQuantity + 1);
+  };
+
+  const decrementQuantity = () => {
+    if (productQuantity > 0) {
+      setProductQuantity(productQuantity - 1);
+    }
   };
 
   const shortText = (text) => {
@@ -74,6 +97,15 @@ const Menu = (props) => {
                 </div>
                 <h6 className="foodPrice mt-2">${product.cost}</h6>
                 <div className="text-center">
+                  <div>
+                    <button onClick={decrementQuantity} className="btnQuantity">
+                      <FaMinus />
+                    </button>
+                    <span className="m-4 text-light">{productQuantity}</span>
+                    <button onClick={incrementQuantity} className="btnQuantity">
+                      <FaPlus />
+                    </button>
+                  </div>
                   <button
                     className="customBtnModal"
                     type="submit"
