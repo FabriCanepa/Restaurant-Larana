@@ -8,16 +8,14 @@ import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import Input from "../Input/Input";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { MdLogout } from "react-icons/md";
 
 import "./UserProfile.css";
 
 const Profile = () => {
   //-----------------------Zustand----------------------------------------------
-  const { user, isLoggedIn, logout } = useSession();
+  const { user } = useSession();
   const { clearUser } = useUser();
-  const navigate = useNavigate();
+  
   //-----------------------RHF----------------------------------------------
   const {
     register,
@@ -82,25 +80,10 @@ const Profile = () => {
     setUserName(data.firstname);
     return;
   };
-  const handleLogout = () => {
-    Swal.fire({
-      title: "Atención",
-      text: "Estás por cerrar tu sesión",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonText: "Si, salir",
-      cancelButtonText: "Canselar",
-    }).then((res) => {
-      if (res.isConfirmed) {
-        toast.success("Sesión cerrada. ¡Hasta luego!");
-        logout();
-        navigate("/");
-      }
-    });
-  };
+ 
 
   return (
-    <section className="container perfilContainer text-center mt-2">
+    <article className="container perfilContainer text-center">
       <form onSubmit={onSubmitRHF(handleSubmit)}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/800px-User-avatar.svg.png"
@@ -108,9 +91,8 @@ const Profile = () => {
           className="profileImg my-4"
         />
         <h1>Welcome {userName}</h1>
-        <article className="text-center ">
-          <div>
-            <div className="d-flex">
+        <div className="text-center">
+            <div className="d-flex ms-4">
               <Input
                 name="firstname"
                 register={register}
@@ -131,7 +113,7 @@ const Profile = () => {
                 <TiEdit />
               </button>
             </div>
-            <div className="d-flex">
+            <div className="d-flex ms-4">
               <Input
                 name="lastname"
                 register={register}
@@ -152,7 +134,7 @@ const Profile = () => {
                 <TiEdit />
               </button>
             </div>
-            <div className="d-flex">
+            <div className="d-flex ms-4">
               <Input
                 type="email"
                 name="email"
@@ -179,21 +161,9 @@ const Profile = () => {
                 Save
               </button>
             </div>
-            {isLoggedIn && (
-              <button
-                className="mt-2 w-50 btn"
-                id="btnLogoutMovil"
-                type="button"
-                onClick={handleLogout}
-              >
-                {" "}
-                <MdLogout /> Sign off
-              </button>
-            )}
           </div>
-        </article>
       </form>
-    </section>
+    </article>
   );
 };
 
