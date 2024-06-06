@@ -70,7 +70,7 @@
 
 .modal-content {
   background-color: rgba(0, 0, 0, 0) !important;
-  margin-top: 8rem;
+  margin-top: 3rem;
   border: none !important;
 }
 
@@ -118,8 +118,17 @@
   border: none;
 }
 
+.btnQuantity {
+  background-color: #f7f4f4;
+  border: none;
+  padding: 10px 40px;
+  font-weight: 800;
+  border-radius: 8px;
+}
+
 .customBtnModal {
   font-family: "Nunito";
+  margin-top: 8px;
 }
 
 .scrollText {

@@ -132,7 +132,7 @@ const RegisterForm = () => {
         </button>
         </div>
         <p className="my-2 text-center">
-          Do you already have an accountt?<Link to="/register" className="link"> Log in </Link>
+          Do you already have an accountt?<Link to="/login" className="link"> Log in </Link>
         </p>
       </form>
     </section>
