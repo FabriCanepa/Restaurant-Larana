@@ -150,6 +150,14 @@
   background-color: transparent;
 }
 
+#containerTable {
+  background: #460913;
+  border-radius: 28px;
+  box-shadow: 0 1rem 3rem #0000002d;
+  width: 350px;
+}
+
+
 @media screen and (max-width: 767px) {
   .menuSec h1 {
     color: #e8d191;

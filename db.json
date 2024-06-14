@@ -421,6 +421,21 @@
           }
         ]
       }
+    },
+    {
+      "id": "9cbe",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "5000",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 1
+          }
+        ]
+      }
     }
   ]
 }
