@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProductsFn } from "../api/products.js";
 
 import ProductTable from "../components/Menu/ProductTable/ProductTable.jsx";
+import TableInput from "../components/TableNumber/TableInput.jsx";
 
 const MenuView = () => {
   const {
@@ -29,6 +30,9 @@ const MenuView = () => {
   return (
     <section className="menuSec">
       <h1 className="text-center mb-5">What&#39;s for Dinner Tonight?</h1>
+      <div className="container p-4 my-4" id="containerTable">
+      <TableInput />
+      </div>
       {isLoading ? (
         <h3 className="text-center mt-4">Loading Dishes...</h3>
       ) : (

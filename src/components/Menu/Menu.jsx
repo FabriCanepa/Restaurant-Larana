@@ -1,5 +1,7 @@
 import Swal from "sweetalert2";
 import useCart from "../../stores/useCart.js";
+import { useTableNumber } from "../../stores/useTableNumber.js";
+
 
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { useState } from "react";
@@ -9,10 +11,19 @@ import "./Menu.css";
 const Menu = (props) => {
   const { product } = props;
   const { addItemToCart } = useCart();
+  const { tableNumber } = useTableNumber();
 
   const [productQuantity, setProductQuantity] = useState(0);
 
   const onAddToCart = () => {
+    if (!tableNumber) {
+      Swal.fire({
+        icon: "error",
+        title: "Table number not set",
+        text: "Please enter your table number before adding items to the cart.",
+      });
+      return;
+    }
     if (productQuantity > 0) {
       addItemToCart(product, productQuantity);
 

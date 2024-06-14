@@ -3,6 +3,7 @@ import { useMutation } from "@tanstack/react-query";
 import useCart from "../../stores/useCart";
 import { addToCartFn } from "../../api/products";
 import { NavLink, useNavigate} from "react-router-dom"
+import TableNumber from "../TableNumber/TableNumber"
 import { toast } from "sonner";
 import Swal from "sweetalert2";
 
@@ -64,6 +65,7 @@ const Cart = () => {
         <section className="container text-center pt-2">  
           <article className="container p-3 conteinerCard">
           <h3 className="fw-bolder my-3">Your order:</h3>
+          <TableNumber />
           <div className="d-flex justify-content-end">
           <NavLink
           className={(isActive) => (isActive ? "nav-link active" : "nav-link")}
