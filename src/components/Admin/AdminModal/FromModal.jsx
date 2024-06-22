@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 import { toast } from "sonner";
 import Input from "../../Input/Input";
 import Textarea from "../../Textarea/Textarea";
-import ToggleSwitch from "../../ToggleSwitch/ToggleSwitch";
 
 import "./AdminModal.css";
 
@@ -142,15 +141,16 @@ const FormModal = ({ product, closeModal }) => {
         name="ingredients"
         error={!!errors.ingredients}
       />
-      <ToggleSwitch
-        register={register}
-        options={{
-          required: false,
-        }}
-        className="my-4"
-        name="available"
-        error={!!errors.available}
-      />
+      <div className="container form-group my-4">
+        <label htmlFor="available">Available</label>
+        <input
+          type="checkbox"
+          id="available"
+          name="available"
+          {...register("available")}
+          className="ms-2"
+        />
+      </div>
       <div className="btn-container container d-flex justify-content-end px-5 mb-3">
         <button
           type="submit"
