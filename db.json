@@ -436,6 +436,29 @@
           }
         ]
       }
+    },
+    {
+      "id": "a450",
+      "cart": {
+        "cartItems": [
+          {
+            "image": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas-1200x675.jpg",
+            "name": "Classic pizza",
+            "cost": "5000",
+            "ingredients": "Una pizza clásica con una base de salsa de tomate, queso mozzarella fresco y hojas de albahaca. Simple y deliciosa",
+            "available": true,
+            "quantity": 4
+          },
+          {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cheeseburger.jpg",
+            "name": "Hamburguesa",
+            "cost": "2000",
+            "ingredients": "Una hamburguesa tradicional que nunca pasa de moda. Incluye una jugosa carne de res, lechuga fresca, tomate maduro, pepinillos crujientes y cebolla, todo en un pan suave. Perfecta para los amantes de lo clásico.",
+            "available": true,
+            "quantity": 3
+          }
+        ]
+      }
     }
   ]
 }
