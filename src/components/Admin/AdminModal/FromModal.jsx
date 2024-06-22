@@ -151,10 +151,10 @@ const FormModal = ({ product, closeModal }) => {
           className="ms-2"
         />
       </div>
-      <div className="btn-container container d-flex justify-content-end px-5 mb-3">
+      <div className="container btn d-flex justify-content-end px-5 mb-3">
         <button
           type="submit"
-          className="btn-edit mx-3"
+          className="mx-3 btnCart"
           data-bs-dismiss="modal"
           aria-label="Close"
         >
@@ -162,7 +162,7 @@ const FormModal = ({ product, closeModal }) => {
         </button>
         <button
           type="button"
-          className="btn-delete"
+          className="btnCart"
           data-bs-dismiss="modal"
           aria-label="Close"
           onClick={handleDelete}

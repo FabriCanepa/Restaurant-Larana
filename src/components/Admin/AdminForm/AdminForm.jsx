@@ -106,9 +106,10 @@ const AdminForm = () => {
         name="available"
         error={!!errors.available}
       />
+      <div className="container">
       <button className="btn" id="btnProduct" type="submit">
         Create new menu
-      </button>
+      </button></div>
     </form>
   );
 };

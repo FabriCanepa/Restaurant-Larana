@@ -3,7 +3,7 @@ import './ToggleSwitch.css'
 
 const ToggleSwitch = ({ register, name, options }) => {
   return (
-    <fieldset className="container d-flex justify-content-between my-5 px-5">
+    <fieldset className="container d-flex justify-content-between my-4">
       <label className="label-available mt-1" htmlFor="switch-input">Available</label>
       <label className="switch-checkbox" htmlFor="switch-input">
       <input type="checkbox" id="switch-input" placeholder="" {...register(name, options)} />
