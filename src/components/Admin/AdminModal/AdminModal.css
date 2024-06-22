@@ -7,3 +7,14 @@
   color: #e8d191;
   padding:10px;
 }
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#available {
+  width: auto;
+  margin-left: 10px;
+}
