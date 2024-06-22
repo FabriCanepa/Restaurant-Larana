@@ -84,7 +84,7 @@
 }
 
 .formGroup input,
-textarea {
+#userComment {
   width: 100%;
   border: none;
   background-color: transparent !important;
