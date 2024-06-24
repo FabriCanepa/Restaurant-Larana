@@ -1,6 +1,22 @@
-const AboutUs = () => {
+import "./AboutUs.css";
+
+const AboutUs = ({ name, role, description, imageUrl }) => {
   return (
-    <div>AboutUs</div>
-  )
-}
-export default AboutUs
+    <article className="cardEmployee">
+      <div className="imgContainer">
+        <img
+          className="imgEmployee"
+          src={imageUrl}
+          alt={name}
+        />
+      </div>
+      <div className="aboutEmployee">
+        <h3>{name}</h3>
+        <p>{role}</p>
+        <p>{description}</p>
+      </div>
+    </article>
+  );
+};
+
+export default AboutUs;
