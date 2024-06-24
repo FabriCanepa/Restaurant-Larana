@@ -29,11 +29,11 @@ const NavbarLarge = () => {
   };
 
   return (
-    <header className="py-4 my-5" id="large">
+    <header id="large">
       <nav className="navlarge d-flex align-items-center fixed-top">
         <div>
           <NavLink className={`nav-link`} to="/">
-          <img src={icono} alt="icono restaurante" width="140" height="140" /></NavLink>
+          <img src={icono} alt="icono restaurante" width="110" height="110" /></NavLink>
         </div>
         <ul className="list-unstyled d-flex w-100 mx-1">
           <li className="flex-fill text-center navCursor">
