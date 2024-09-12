@@ -26,6 +26,15 @@ const MenuView = () => {
       </section>
     );
   }
+  if (products) {
+    if (products.data.length===0) {
+      return (
+        <div className="container menuAlert alert alert-warning text-center"> 
+        There are no menus available at this time. Please come back later.
+        </div>
+      )
+    }
+  }
 
   return (
     <section className="menuSec">

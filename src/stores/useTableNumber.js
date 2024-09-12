@@ -1,8 +1,19 @@
 import { create } from "zustand";
 
-export const useTableNumber = create((set) => ({
-  tableNumber: null,
-  isTableNumberSet: false,
-  setTableNumber: (number) => set({ tableNumber: number, isTableNumberSet: true }),
-  clearTableNumber: () => set({ tableNumber: null, isTableNumberSet: false }),
-}));
+const persistTableNumber = (set) => ({
+  tableNumber: JSON.parse(localStorage.getItem("tableNumber")) || null,
+  isTableNumberSet: !!localStorage.getItem("tableNumber"),
+  
+  setTableNumber: (number) => {
+    localStorage.setItem("tableNumber", JSON.stringify(number));
+    set({ tableNumber: number, isTableNumberSet: true });
+  },
+  
+  clearTableNumber: () => {
+    localStorage.removeItem("tableNumber");
+    set({ tableNumber: null, isTableNumberSet: false });
+  }
+});
+
+export const useTableNumber = create(persistTableNumber);
+

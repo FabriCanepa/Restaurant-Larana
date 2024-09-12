@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const useCart = create((set, get) => ({
+export const useCart = create((set, get) => ({
   cartItems: [],
 
   addItemToCart: (item, quantity = 1) => {
@@ -15,6 +15,23 @@ const useCart = create((set, get) => ({
       set({ cartItems: [...get().cartItems, { ...item, quantity }] });
     }
   },
+
+  removeItemFromCart: (itemId) => {
+    set((state) => {
+      const updatedItems = state.cartItems.reduce((acc, item) => {
+        if (item.id === itemId) {
+          if (item.quantity > 1) {
+            acc.push({ ...item, quantity: item.quantity - 1 });
+          }
+        } else {
+          acc.push(item);
+        }
+        return acc;
+      }, []);
+      return { cartItems: updatedItems };
+    });
+  },
+
   clearProductOrder: () => set({ cartItems: [] }),
 }));
 

@@ -31,8 +31,8 @@ const Router = () => {
       <main>
         <Routes>
           <Route path="/" element={<ComeWebView />} />
-          <Route path="/menu" element={<MenuView />} />
-          <Route path="/cart" element={<CartView />} /> 
+          <Route path="/menu" element={!isLoggedIn ? <Navigate to="/"/> : <MenuView />} />
+          <Route path="/cart" element={!isLoggedIn ? <Navigate to="/"/> : <CartView />} /> 
           <Route path="/status" element={<Status/>} /> 
           <Route
             path="/profile"

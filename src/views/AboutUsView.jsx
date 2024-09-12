@@ -3,9 +3,9 @@ import AboutUs from "../components/AboutUs/AboutUs";
 const teamMembers = [
   {
     name: "Mauricio Gunsett",
-    role: "Chef Ejecutivo",
+    role: "Executive Chef",
     description:
-      "Con más de 15 años de experiencia en la cocina gourmet. Amante de los ingredientes frescos y de alta calidad.",
+      "With more than 15 years of experience in gourmet cooking. Lover of fresh and high quality ingredients.",
     imageUrl:
       "https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png",
   },
@@ -13,7 +13,7 @@ const teamMembers = [
     name: "Enzo Iñigo",
     role: "Sommelier",
     description:
-      "Experto para los mejores maridajes. Con un profundo de vinos y licores, y mi pasión es ayudar a los clientes a descubrir nuevas y combinaciones de sabores.",
+      "Expert for the best pairings. With a deep background in wines and spirits, my passion is helping customers discover new flavors and combinations.",
     imageUrl:
       "https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-female-5.png",
   },
@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Canepa Fabricio",
     role: "Pastelero",
     description:
-      "Creativo especializado en postres artesanales. Con un toque artístico, dulces únicos y deliciosos que combinan técnicas tradicionales con un estilo moderno.",
+      "Creative specialized in artisanal desserts. With an artistic touch, unique and delicious sweets that combine traditional techniques with a modern style.",
     imageUrl:
       "https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-4.png",
   },

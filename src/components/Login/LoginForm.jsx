@@ -36,7 +36,7 @@ const LoginForm = () => {
     onSuccess: (data) => {
       //msj exito
       Swal.close();
-      toast.success("Bienvenido");
+      toast.success("Welcome");
 
       // Loguear al usuario
       login(data);
@@ -55,7 +55,6 @@ const LoginForm = () => {
   const handleSubmit = (data) => {
     Swal.showLoading();
     postLogin(data);
-    
   };
 
   // RENDER -----------------------------------------------------------
@@ -82,9 +81,9 @@ const LoginForm = () => {
 
       <div className="d-flex focus align-items-baseline inputContainer">
         <Input
-          label="Contraseña"
+          label="Password"
           type={showPwd ? "text" : "password"}
-          placeholder="Ingrese su contraseña"
+          placeholder="Enter your password"
           name="password"
           className="w-100 fildsetLogin"
           register={register}

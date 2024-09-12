@@ -25,7 +25,7 @@ const FormModal = ({ product, closeModal }) => {
       setValue("image", product.image);
       setValue("cost", product.cost);
       setValue("ingredients", product.ingredients);
-      setValue("available", product.available);
+      setValue("isAvailable", product.isAvailable);
     }
   }, [product, setValue]);
 
@@ -42,8 +42,7 @@ const FormModal = ({ product, closeModal }) => {
     },
     onError: (e) => {
       Swal.close();
-      toast.error("An error occurred editing the product");
-      console.log(e);
+      toast.error(e.message);
     },
   });
 
@@ -63,9 +62,9 @@ const FormModal = ({ product, closeModal }) => {
 
       queryClient.invalidateQueries("products");
     },
-    onError: () => {
+    onError: (e) => {
       Swal.close();
-      toast.error("An error occurred deleting the product");
+      toast.error(e.message);
     },
   });
 
@@ -146,8 +145,8 @@ const FormModal = ({ product, closeModal }) => {
         <input
           type="checkbox"
           id="available"
-          name="available"
-          {...register("available")}
+          name="isAvailable"
+          {...register("isAvailable")}
           className="ms-2"
         />
       </div>

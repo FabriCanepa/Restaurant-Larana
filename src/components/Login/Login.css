@@ -1,11 +1,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .back{
+  margin-top: 110px;
   background-image: url('../../assets/Background.png');
   background-size: cover;
   border-radius: 10px;
 }
-
+.logoLogin{
+  width: 180px;
+  
+}
 .fildsetLogin {
   padding:  12px 0px 12px 6px!important;
 }

@@ -1,21 +1,29 @@
+import { jwtDecode } from "jwt-decode";
+
 const API_URL = import.meta.env.VITE_API_URL;
 
-export const postLoginFn = async (formdata) => {
-  const response = await fetch(`${API_URL}/users`);
+export const postLoginFn = async (formData) => {
+  const response = await fetch(`${API_URL}/auth/login`, {
+    method: "POST",
+    body: JSON.stringify(formData),
+    headers: {
+      "Content-type": "application/json",
+    },
+  });
 
-  if (!response.ok) {
-    throw new Error("Ocurrio un error al loguearse");
+  const data = await response.json();
+
+  if (!response.ok){
+    const message = data.message
+    throw new Error(message || "An error occurred while logging in")
   }
 
-  const users = await response.json();
 
-  const foundUser = users.find(
-    (item) =>
-      item.email === formdata.email && item.password === formdata.password,
-  );
+  const token = data.data
 
-  if (!foundUser) {
-    throw new Error("Usuario o contraseña no válida");
-  }
-  return { ...foundUser };
+  sessionStorage.setItem("token", token);
+
+  const userData = jwtDecode(token).user;
+  
+  return userData;
 };

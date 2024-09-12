@@ -1,5 +1,6 @@
 .error-container {
     flex-direction: column;
+    margin-top: 125px;
   }
   
   .error-container img {

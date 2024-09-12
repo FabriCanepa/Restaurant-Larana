@@ -4,30 +4,45 @@ import useCart from "../../stores/useCart";
 import { addToCartFn } from "../../api/products";
 import { NavLink, useNavigate } from "react-router-dom";
 import TableNumber from "../TableNumber/TableNumber";
-import { toast } from "sonner";
 import Swal from "sweetalert2";
+import { useSession } from "../../stores/useSession";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Cart = () => {
-  const { cartItems, clearProductOrder } = useCart();
+  const { cartItems, clearProductOrder, removeItemFromCart } = useCart();
+  const { user } = useSession();
+
+  if (!user || !user.id) {
+    return Swal.showLoading();
+  }
+  const userId = user.id;
 
   const navigate = useNavigate();
 
-  const { mutate: postOrders } = useMutation({
+  const { mutate: addToCart } = useMutation({
     mutationFn: addToCartFn,
     onSuccess: () => {
-      toast.success("Your order was successfully placed.");
+      Swal.fire({
+        icon: "success",
+        title: "Order confirmed",
+        text: "Your order has been placed successfully!",
+      });
+      clearProductOrder();
       setTimeout(() => {
         navigate("/status");
       }, 1000);
     },
-    onError: (e) => {
-      Swal.close();
-      toast.error(e.message);
+    onError: (error) => {
+      Swal.fire({
+        icon: "error",
+        title: "Order failed",
+        text: error.message,
+      });
     },
   });
 
   const handleOrder = () => {
-    if (Object.keys(cartItems).length === 0) {
+    if (cartItems.length === 0) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -43,15 +58,14 @@ const Cart = () => {
         cancelButtonText: "Cancel",
       }).then((res) => {
         if (res.isConfirmed) {
-          const products = Object.values(cartItems).map((product) => ({
-            ...product,
-            id: undefined,
+          const products = cartItems.map(({ id, ...rest }) => ({
+            ...rest,
           }));
           const newOrder = {
-            cartItems: products,
+            productsOrdered: products,
+            userId: userId,
           };
-          postOrders(newOrder);
-          clearProductOrder();
+          addToCart(newOrder);
         }
       });
     }
@@ -69,9 +83,9 @@ const Cart = () => {
   );
 
   const formatCurrency = (value) => {
-    const formatter = new Intl.NumberFormat('es-AR', {
-      style: 'currency',
-      currency: 'ARS',
+    const formatter = new Intl.NumberFormat("es-AR", {
+      style: "currency",
+      currency: "ARS",
       minimumFractionDigits: 0,
       maximumFractionDigits: 2,
     });
@@ -81,14 +95,16 @@ const Cart = () => {
 
   return (
     <>
-      <h1 className="text-center fw-bolder">Restaurant Larana</h1>
+      <h1 className="text-center cartSec fw-bolder">Restaurant Larana</h1>
       <section className="container text-center pt-2">
-        <article className="container p-3 containerCard">
+        <article className="container p-3 conteinerCard">
           <h3 className="fw-bolder my-3">Your order:</h3>
           <TableNumber />
           <div className="d-flex justify-content-end">
             <NavLink
-              className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
               aria-current="page"
               to="/menu"
             >
@@ -102,15 +118,38 @@ const Cart = () => {
           {Object.values(cartItems).map((item) => (
             <div className="text-center" key={item.id}>
               <h4 className="py-2 borderName fw-bolder">{item.name}</h4>
-              <img className="cartImg" src={item.image} alt="Descripción de la imagen" />
+              <img
+                className="cartImg"
+                src={item.image}
+                alt="Descripción de la imagen"
+              />
               <h5 className="py-2">Amount: {item.quantity}</h5>
-              <h5 className="py-2 borderTotal">Price: {formatCurrency(item.cost)}</h5>
+              <h5 className="py-2 borderTotal">
+                Price: {formatCurrency(item.cost)}
+              </h5>
               <h5 className="py-2 borderTotal">
                 Products total: {formatCurrency(totalProduct[item.id])}
               </h5>
+              <div className="d-flex justify-content-center align-items-center mt-2">
+                <button
+                  onClick={() => removeItemFromCart(item.id)}
+                  className="btnQuantity"
+                >
+                  <FaMinus />
+                </button>
+                <span className="m-4 text-light">{item.quantity}</span>
+                <button
+                  onClick={() => addItemToCart(item, 1)}
+                  className="btnQuantity"
+                >
+                  <FaPlus />
+                </button>
+              </div>
             </div>
           ))}
-          <h4 className="fw-bolder mt-4">Total Order Cost: {formatCurrency(totalOrderCost)}</h4>
+          <h4 className="fw-bolder mt-4">
+            Total Order Cost: {formatCurrency(totalOrderCost)}
+          </h4>
         </article>
         <section className="row my-3 gap-md-0">
           <article className="col-12 col-md-6">

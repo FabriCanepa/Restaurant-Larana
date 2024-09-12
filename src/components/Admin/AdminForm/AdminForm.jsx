@@ -19,7 +19,7 @@ const AdminForm = () => {
     formState: { errors },
     reset,
   } = useForm();
- 
+
   const queryClient = useQueryClient();
 
   const { mutate: postProducts } = useMutation({
@@ -30,18 +30,21 @@ const AdminForm = () => {
 
       reset();
 
-      queryClient.invalidateQueries("products")
+      queryClient.invalidateQueries("products");
     },
-    onError: () => {
+    onError: (e) => {
       Swal.close();
-      toast.error("Hubo un error al guardar el producto");
+      toast.error(e.message);
     },
   });
 
   const handleSubmit = (data) => {
-    console.log(data);
+    const productData = {
+      ...data,
+      cost: Number(data.cost),
+    };
     Swal.showLoading();
-    postProducts(data);
+    postProducts(productData);
   };
 
   return (
@@ -103,13 +106,14 @@ const AdminForm = () => {
           required: false,
         }}
         className="my-4"
-        name="available"
-        error={!!errors.available}
+        name="isAvailable"
+        error={!!errors.isAvailable}
       />
       <div className="container">
-      <button className="btn" id="btnProduct" type="submit">
-        Create new menu
-      </button></div>
+        <button className="btn" id="btnProduct" type="submit">
+          Create new menu
+        </button>
+      </div>
     </form>
   );
 };

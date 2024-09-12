@@ -34,7 +34,7 @@ const RegisterForm = () => {
     onSuccess: (data) => {
       //msj exito
       Swal.close();
-      toast.success("Bienvenido");
+      toast.success("Welcome");
 
       // Loguear al usuario
       login({ ...data });
@@ -42,27 +42,27 @@ const RegisterForm = () => {
       // Navegar a inicio pero estando logueado
       navigate("/");
     },
-    onError: () => {
+    onError: (err) => {
       Swal.close();
-      toast.error("Ocurrio un error al registrar un usuario");
+      toast.error(err.message);
     },
   });
 
   // HANDLERS---------------------------------------------------------------
   const handleSubmit = (data) => {
     Swal.showLoading();
-    postUser({ ...data, isAdmin: false });
+    postUser(data);
   };
   // RENDER --------------------------------------------------------------
   return (
     <section>
       <form onSubmit={onSubmitRHF(handleSubmit)} className="formsRegister p-4">
-      <div className="text-center"><img className='w2 h2 logoRegister py-3' src={icono} alt="icono restaurante" /></div>
+      <div className="text-center"><img className='w2 h2 logoRegister' src={icono} alt="icono restaurante" /></div>
         <h4 className="text-center mb-4">Welcome to Larana</h4>
         <article className="row">
           <div className="col-12 col-md-6">
             <Input
-              label="Nombre"
+              label="Name"
               name="firstname"
               register={register}
               error={!!errors?.firstname}
@@ -76,7 +76,7 @@ const RegisterForm = () => {
           </div>
           <div className="col-12 col-md-6">
             <Input
-              label="Apellido"
+              label="Last name"
               name="lastname"
               register={register}
               error={!!errors?.lastname}
@@ -105,7 +105,7 @@ const RegisterForm = () => {
           </div>
           <div className="col-12 col-md-6">
             <Input
-              label="Contraseña"
+              label="Password"
               type="password"
               name="password"
               register={register}
@@ -123,8 +123,7 @@ const RegisterForm = () => {
           </div>
         </article>
         <p className="text-center">
-          La contraseña debe contener al menos una letra minúscula, una letra
-          mayúscula y tener una longitud entre 8 y 15 caracteres.
+        The password must contain at least one lowercase letter, one uppercase letter, and be between 8 and 15 characters long.
         </p>
         <div className="registerButton">
         <button type="submit" className="btn w-100 button" id="registerBtn">

@@ -14,13 +14,13 @@ const AdminCard = ({ product, openModal }) => {
       </div>
       <div className="mt-auto">
         <button
-          className="btn w-100"
+          className="btn w-100 justify-content-center"
           id="btnEdit"
           onClick={() => openModal(product)}
           data-bs-toggle="modal"
           data-bs-target="#modalCard"
           >
-          Editar
+          Edit
         </button>
           </div>
     </div>

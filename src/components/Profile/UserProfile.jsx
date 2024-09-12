@@ -22,7 +22,7 @@ const Profile = () => {
     handleSubmit: onSubmitRHF,
     formState: { errors },
     setValue,
-    //reset,
+    
   } = useForm();
 
   const [editingFields, setEditingFields] = useState({});
@@ -68,15 +68,13 @@ const Profile = () => {
   const handleSubmit = (data) => {
     Swal.showLoading();
     const newData = {
+      
       firstname: data.firstname,
       lastname: data.lastname,
       email: data.email,
-      password: user.password,
-      isAdmin: user.isAdmin,
-      id: user.id,
-    };
 
-    putUser(newData);
+    };
+    putUser({ ...newData, id: user.id });
     setUserName(data.firstname);
     return;
   };

@@ -9,8 +9,8 @@ const ComeWeb = () => {
   const { isLoggedIn } = useSession();
   return (
     <>
-      <section className="joinPage text-center">
-      <Link to={isLoggedIn ? "/menu" : "/login"} className="btn mb-5">
+      <section className="joinPage mt-5 text-center">
+      <Link to={isLoggedIn ? "/menu" : "/login"} className="btn mb-5 " id="btnComeIn">
         Come In!
       </Link>
         <h2 className="mb-5">

@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='my-3'>
-        <p className= "fs-2 py-3 text-center">&copy; Todos los derechos reservados</p>
+        <p className= "fs-2 py-3 text-center">&copy; All rights reserved</p>
         </div>
       </section>
     </footer>

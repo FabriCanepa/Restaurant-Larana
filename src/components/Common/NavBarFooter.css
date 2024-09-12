@@ -1,7 +1,4 @@
 /* Navbar mobile*/
-main {
-  margin-top: 111px;
-}
 .navbar {
   width: 100%;
   background-color: #160404;
@@ -17,7 +14,8 @@ a svg {
   font-size: 40px;
   color: #4d000d;
 }
-
+.FaHeadphones {font-size: 40px;
+  color: #4d000d;}
 #styleLogout {
   color: #e8d191;
   background: #8b0000;
@@ -30,7 +28,7 @@ a svg {
   width: 100%;
   color: #e8d191;
   font-family: "TAN - PEARL";
-  border-bottom: 1px solid rgba(0, 0, 0, 0.658);
+  border-bottom: 1px solid #e8d191;
 }
 
 #btnLogout {
@@ -43,9 +41,8 @@ a svg {
   background: #8b0000;
 }
 .navCursor:hover {
-  background-color: #742f2f;
-  border-radius: 10px;
-  border-bottom: solid 1px;
+ 
+  color: #ffffff;
 }
 
 @media screen and (max-width: 745px) {
@@ -86,3 +83,4 @@ footer a {
 footer svg {
   color: #e8d191;
 }
+

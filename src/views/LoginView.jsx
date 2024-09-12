@@ -6,7 +6,7 @@ const LoginView = () => {
   return (
 
     <section className="back ">
-      <div className="text-center"><img className='logoLogin py-3' src={icono} alt="icono restaurante"/></div>
+      <div className="text-center"><img className='logoLogin ' src={icono} alt="icono restaurante"/></div>
       <div className="d-flex justify-content-center text-start">
         <LoginForm />
       </div>

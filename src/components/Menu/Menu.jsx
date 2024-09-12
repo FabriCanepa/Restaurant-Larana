@@ -1,18 +1,14 @@
 import Swal from "sweetalert2";
 import useCart from "../../stores/useCart.js";
 import { useTableNumber } from "../../stores/useTableNumber.js";
-
-
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { useState } from "react";
-
 import "./Menu.css";
 
 const Menu = (props) => {
   const { product } = props;
   const { addItemToCart } = useCart();
   const { tableNumber } = useTableNumber();
-
   const [productQuantity, setProductQuantity] = useState(0);
 
   const onAddToCart = () => {
@@ -24,7 +20,7 @@ const Menu = (props) => {
       });
       return;
     }
-    if (productQuantity > 0) {
+    if (productQuantity > 0 && product.isAvailable) {
       addItemToCart(product, productQuantity);
 
       Swal.fire({
@@ -33,6 +29,12 @@ const Menu = (props) => {
         text: `${productQuantity} ${product.name}(s) has been added to your cart.`,
       });
       setProductQuantity(0);
+    } else if (!product.isAvailable) {
+      Swal.fire({
+        icon: "error",
+        title: "Product unavailable",
+        text: "This product is not available at the moment.",
+      });
     } else {
       Swal.fire({
         icon: "error",
@@ -60,7 +62,7 @@ const Menu = (props) => {
   };
 
   return (
-    <div className="cardContainer">
+    <div className={`cardContainer ${!product.isAvailable ? "unavailable" : ""}`}>
       <article
         className="menuCard gap-2 mb-4"
         data-bs-toggle="modal"
@@ -70,6 +72,9 @@ const Menu = (props) => {
           <h5 className="foodTitle">{product.name}</h5>
           <p className="foodInfo">{shortText(product.ingredients)}</p>
           <p className="foodPrice">${product.cost}</p>
+          {!product.isAvailable && (
+            <p className="availabilityStatus text-danger">Product not available</p>
+          )}
         </div>
         <div className="menuImage">
           <img src={product.image} alt={product.name} />
@@ -107,24 +112,36 @@ const Menu = (props) => {
                   <p className="card-text">{product.ingredients}</p>
                 </div>
                 <h6 className="foodPrice mt-2">${product.cost}</h6>
-                <div className="text-center">
-                  <div>
-                    <button onClick={decrementQuantity} className="btnQuantity">
-                      <FaMinus />
-                    </button>
-                    <span className="m-4 text-light">{productQuantity}</span>
-                    <button onClick={incrementQuantity} className="btnQuantity">
-                      <FaPlus />
+                {product.isAvailable ? (
+                  <div className="text-center">
+                    <div>
+                      <button onClick={decrementQuantity} className="btnQuantity">
+                        <FaMinus />
+                      </button>
+                      <span className="m-4 text-light">{productQuantity}</span>
+                      <button onClick={incrementQuantity} className="btnQuantity">
+                        <FaPlus />
+                      </button>
+                    </div>
+                    <button
+                      className="customBtnModal"
+                      type="submit"
+                      onClick={onAddToCart}
+                    >
+                      Add to cart
                     </button>
                   </div>
-                  <button
-                    className="customBtnModal"
-                    type="submit"
-                    onClick={onAddToCart}
-                  >
-                    Add to cart
-                  </button>
-                </div>
+                ) : (
+                  <div className="text-center">
+                    <button
+                      className="customBtnModal"
+                      type="button"
+                      disabled
+                    >
+                      Out of stock
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -1,15 +1,12 @@
 import Menu from "../Menu";
 
-
 const ProductTable = (props) => {
   const { products } = props;
-
-
-  const availableProducts = products?.filter((product) => product.available);
+  const allProducts = products.data;
 
   return (
     <>
-      {availableProducts.map((product) => (
+      {allProducts.map((product) => (
         <Menu product={product} key={product.id} />
       ))}
     </>
