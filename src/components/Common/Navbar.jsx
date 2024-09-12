@@ -63,7 +63,9 @@ const Navbar = () => {
             {isLoggedIn ? (
               <CartIcon />
             ) : (
-              <FaHeadphones className="FaHeadphones" /> 
+              <NavLink className="nav-link" to="/contact">
+                <FaHeadphones className="FaHeadphones" />
+              </NavLink>
             )}
           </li>
           {user?.isAdmin && (
