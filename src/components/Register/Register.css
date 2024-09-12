@@ -1,0 +1,12 @@
+.logoRegister {
+    width: 180px;
+}
+
+#registerBtn {
+    background: #730014;
+    color: #e8d191;
+}
+
+#registerBtn:hover {
+    background: #41020d;
+}

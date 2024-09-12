@@ -1,0 +1,86 @@
+/* Navbar mobile*/
+.navbar {
+  width: 100%;
+  background-color: #160404;
+  border-top: 1px solid #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  font-family: "TAN - PEARL" !important;
+}
+
+a svg {
+  font-size: 40px;
+  color: #4d000d;
+}
+.FaHeadphones {font-size: 40px;
+  color: #4d000d;}
+#styleLogout {
+  color: #e8d191;
+  background: #8b0000;
+}
+
+/* Navbar large */
+
+.navlarge {
+  background-color: #4d000d;
+  width: 100%;
+  color: #e8d191;
+  font-family: "TAN - PEARL";
+  border-bottom: 1px solid #e8d191;
+}
+
+#btnLogout {
+  color: #e8d191;
+  background: #8b0000;
+}
+
+#btnLogoutMovil {
+  color: #e8d191;
+  background: #8b0000;
+}
+.navCursor:hover {
+ 
+  color: #ffffff;
+}
+
+@media screen and (max-width: 745px) {
+  #large {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 746px) {
+  #large {
+    display: block;
+  }
+  #mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 746px) {
+  #btnLogoutMovil {
+    display: none;
+  }
+}
+/* ------------FOOTER------------*/
+
+footer {
+  margin-bottom: 1rem;
+  background-color: #4d000d;
+  color: #e8d191;
+  font-family: "TAN - PEARL";
+}
+footer a {
+  text-decoration: none;
+  color: #e8d191;
+  font-size: 16px;
+}
+footer svg {
+  color: #e8d191;
+}
+

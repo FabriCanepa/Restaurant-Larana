@@ -1,4 +1,12 @@
 {
-    "products":[],
-    "users":[]
+  "products": [
+    
+  ],
+  "users": [
+    {}
+  ],
+  "cart": [
+    {
+    }
+        ]
 }

@@ -1,0 +1,45 @@
+.error-container {
+    flex-direction: column;
+    margin-top: 125px;
+  }
+  
+  .error-container img {
+    object-fit: cover;
+    width: 600px;
+    max-height: 300px;
+  }
+  
+  .error-container h1 {
+    text-decoration-line: none;
+  }
+  
+  .error-container button {
+    text-decoration: none;
+    font-family: 'Nunito';
+    display: flex;
+    border-radius: 20px !important;
+    padding: 1em;
+    border: none;
+    background: #730014;
+    outline: none;
+    color: #e8d191;
+    cursor: pointer;
+    appearance: none;
+    text-decoration-line: none;
+  }
+  
+  .error-container button a {
+    text-decoration: none;
+    color: #e8d191;
+  }
+  
+  .error-container button:hover {
+    transition: 400ms ease;
+    background: #54000e;
+  }
+  
+  @media (max-width: 600px) {
+    .error-container img {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,14 @@
+.productForm {
+  border-radius: 40px !important;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 800px;
+}
+.adminTitle {
+  color: #e8d191 !important;
+}
+
+#btnProduct{
+  color: #e8d191;
+  background: #8B0000;
+}

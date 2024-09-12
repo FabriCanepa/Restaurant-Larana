@@ -1,0 +1,25 @@
+.btn-table {
+    background-color: #730014;
+    text-decoration: none;
+    width: 200px;
+    height: 58px;
+    color: #e8d191;
+    border-radius: 48px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
+    transition: all 0.2s;
+    border: none;
+    margin-bottom: 20px;
+  
+    &:active {
+      background-color: #460913;
+    }
+  }
+
+  .tableForm {
+    width: 300px;
+  }
+

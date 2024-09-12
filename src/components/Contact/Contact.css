@@ -1,0 +1,147 @@
+.contactSec {
+  margin-top: 110px;
+  text-align: center;
+  position: relative;
+  background-image: url(/src/assets/images/bgcontact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contactSec h2 {
+  display: inline-block;
+  position: relative;
+  color: #e8d191;
+  font-family: "TAN - PEARL";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contactSec h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 125%;
+  border-bottom: 2px solid #e8d191;
+  transform: translateX(-50%);
+}
+
+.formContact {
+  background-color: #160404ab;
+  border-radius: 40px;
+  margin: 0 auto;
+  width: 359px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  min-height: 100px !important;
+}
+
+.formContact .titleForm {
+  color: #e8d191;
+  text-align: center;
+  font-family: "TAN - PEARL";
+  font-size: 20px;
+  font-style: normal;
+  padding-top: 25px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 16px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.formGroup::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  border-bottom: 2px solid #e8d191;
+  transform: translateX(-50%);
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #e8d191;
+}
+
+.formGroup .customError {
+  font-size: 14px;
+}
+
+.formGroup textarea {
+  resize: none;
+}
+
+.formGroup input,
+#userComment {
+  width: 100%;
+  border: none;
+  background-color: transparent !important;
+  color: #e8d191;
+  margin-bottom: 8px;
+}
+
+.formGroup textarea {
+  overflow-y: auto;
+  scrollbar-width: thin; 
+  scrollbar-color: #888 rgba(90, 85, 85, 0.514);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #e8d191;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+}
+
+.customFormBtn {
+  background-color: #730014;
+  text-decoration: none;
+  width: 280px;
+  height: 58px;
+  color: #e8d191;
+  border-radius: 48px;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 16px;
+  transition: all 0.2s;
+  border: none;
+  margin-bottom: 20px;
+
+  &:active {
+    background-color: #460913;
+  }
+}
+
+.formContact p {
+  font-size: 16px;
+  text-align: start;
+}
+
+
+@media (max-width: 745px) {
+.contactSec {
+  margin-top: 0;
+  height: 100vh;
+}
+}
