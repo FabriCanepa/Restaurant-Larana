@@ -1,5 +1,4 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import "./NavbarFooter.css";
 import { useSession } from "../../stores/useSession";
 import Swal from "sweetalert2";
 import { toast } from "sonner";
@@ -9,7 +8,7 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { MdLogout } from "react-icons/md";
 import { useTableNumber } from "../../stores/useTableNumber";
 import CartIcon from "../Cart/CartIcon";
-
+import "./NavbarFooter.css";
 
 const Navbar = () => {
   const { isLoggedIn, logout, user } = useSession();
