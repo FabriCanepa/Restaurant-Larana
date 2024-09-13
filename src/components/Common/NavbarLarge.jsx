@@ -1,11 +1,11 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import icono from "../../assets/Logo.png";
-import "./navbarfooter.css";
 import { useSession } from "../../stores/useSession";
 import Swal from "sweetalert2";
 import { toast } from "sonner";
 import { MdLogout } from "react-icons/md";
 import { useTableNumber } from "../../stores/useTableNumber";
+import "./navbarfooter.css";
 
 const NavbarLarge = () => {
   const { isLoggedIn, logout, user } = useSession();
