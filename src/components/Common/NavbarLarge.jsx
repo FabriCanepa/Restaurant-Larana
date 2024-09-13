@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import { toast } from "sonner";
 import { MdLogout } from "react-icons/md";
 import { useTableNumber } from "../../stores/useTableNumber";
-import "../../components/Common/navbarfooter.css"
+import "./navbarfooter.css";
 
 const NavbarLarge = () => {
   const { isLoggedIn, logout, user } = useSession();
