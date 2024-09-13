@@ -2,7 +2,7 @@
 import icono from '../../assets/Logo.png'
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import './navbarFooter.css'; 
+import './navbarfooter.css'; 
 
 
 const Footer = () => {
