@@ -7,7 +7,7 @@ import LoginView from "./views/LoginView";
 import RegisterView from "./views/RegisterView";
 import AboutUsView from "./views/AboutUsView";
 import ErrorView from "./views/ErrorView";
-import Navbar from "./components/Common/Navbar";
+
 import UserProfileView from "./views/UserProfileView";
 import ContactView from "./views/ContactView";
 import ComeWebView from "./views/ComeWebView";
@@ -15,10 +15,12 @@ import CartView from "./views/CartView";
 
 import NavbarLarge from "./components/Common/NavbarLarge";
 import Footer from "./components/Common/Footer";
+import Navbar from "./components/Common/Navbar";
 
 import "./Router.css";
 import { useSession } from "./stores/useSession";
 import Status from "./views/Status";
+
 
 
 const Router = () => {
@@ -27,7 +29,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <NavbarLarge />
-      <Navbar />
+      <Navbar></Navbar>
       <main>
         <Routes>
           <Route path="/" element={<ComeWebView />} />
