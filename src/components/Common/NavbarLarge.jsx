@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import icono from "../../assets/Logo.png";
-import "./NavBarFooter.css";
+import "./NavbarFooter.css";
 import { useSession } from "../../stores/useSession";
 import Swal from "sweetalert2";
 import { toast } from "sonner";
