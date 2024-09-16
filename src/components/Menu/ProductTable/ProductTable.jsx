@@ -1,4 +1,4 @@
-import Menu from "../Menu.css";
+import Menu from "../Menu";
 
 const ProductTable = (props) => {
   const { products } = props;
