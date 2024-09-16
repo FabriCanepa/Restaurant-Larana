@@ -8,7 +8,7 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { MdLogout } from "react-icons/md";
 import { useTableNumber } from "../../stores/useTableNumber";
 import CartIcon from "../Cart/CartIcon";
-import "./navbarfooter.css";
+
 
 const Navbar = () => {
   const { isLoggedIn, logout, user } = useSession();

@@ -29,7 +29,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <NavbarLarge />
-      <Navbar></Navbar>
+      <Navbar/>
       <main>
         <Routes>
           <Route path="/" element={<ComeWebView />} />
