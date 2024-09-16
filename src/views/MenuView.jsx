@@ -18,8 +18,8 @@ const MenuView = () => {
 
   if (isError) {
     return (
-      <section className="">
-        <h1 className="text-center mb-5">Whats for Dinner Tonight?</h1>
+      <section className="menuSec">
+        <h1 className="text-center mb-5">What&#39;s for Dinner Tonight?</h1>
         <div className="alert alert-danger">
           Ocurrió un error al cargar los productos
         </div>
@@ -37,7 +37,7 @@ const MenuView = () => {
   }
 
   return (
-    <section className="">
+    <section className="menuSec">
       <h1 className="text-center mb-5">What&#39;s for Dinner Tonight?</h1>
       <div className="container p-4 my-4" id="containerTable">
       <TableInput />

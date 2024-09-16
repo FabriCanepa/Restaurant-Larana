@@ -92,7 +92,7 @@ const AdminForm = () => {
         register={register}
         options={{
           required: true,
-          minLength: 5,
+          minLength: 3,
           maxLength: 3000,
         }}
         className="my-4"
