@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { useTableNumber } from "../../stores/useTableNumber.js";
 import Button from "../Button/Button.jsx";
-import "./tableNumber.css";
+import "./TableNumber.css";
 
 const TableInput = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
