@@ -92,7 +92,9 @@ const Menu = (props) => {
       >
         <div className="modal-dialog">
           <div className="modal-content">
-            <div className="text-end me-3">
+            
+            <div className="card customModal mb-1 mx-3">
+            <div className=" me-3">
               <button
                 type="button"
                 className="btn-close"
@@ -100,7 +102,6 @@ const Menu = (props) => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="card customModal mb-1 mx-3">
               <img
                 src={product.image}
                 className="card-img-top"

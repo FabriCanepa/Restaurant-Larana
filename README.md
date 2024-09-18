@@ -32,6 +32,9 @@ Larana Restaurant is a digital experience designed so that customers enjoy their
 - **Bcryptjs** for password hashing.
 - **Zustand** for state management.
 
+## Admin
+- To test the admin view, use this account: Email: mau-gunsett@gmail.com | Password: aA1*bbbb
+
 ## Team
 - [Iñigo Enzo](https://github.com/einigo)
 - [Gunsett Alexis](https://github.com/mauricio-gunsett)

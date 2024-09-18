@@ -70,9 +70,13 @@
 /* Modal */
 
 .modal-content {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: #4d000df7 !important; 
   margin-top: 3rem;
   border: none !important;
+}
+
+.modal-content .card {
+  background-color: #00000000;
 }
 
 .customModal {
@@ -127,6 +131,10 @@
   border-radius: 8px;
 }
 
+.modal-content .btn-close {
+  background-color: rgb(239, 224, 224);
+}
+
 .customBtnModal {
   font-family: "Nunito";
   margin-top: 8px;
@@ -160,7 +168,6 @@
   box-shadow: 0 1rem 3rem #0000002d;
   width: 350px;
 }
-
 
 @media screen and (max-width: 767px) {
   .menuSec h1 {
@@ -297,7 +304,6 @@
 }
 
 @media (min-width: 992px) {
-
   .menuSec h1 {
     color: #e8d191;
     font-family: "TAN - PEARL";

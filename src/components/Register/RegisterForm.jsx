@@ -10,7 +10,7 @@ import { useSession } from "../../stores/useSession";
 
 import Input from "../Input/Input";
 import "./Register.css";
-import icono from '../../assets/Logo.png'
+import icono from "../../assets/Logo.png";
 
 const RegisterForm = () => {
   //ZUSTAND----------------------------------------------------------------
@@ -57,7 +57,13 @@ const RegisterForm = () => {
   return (
     <section>
       <form onSubmit={onSubmitRHF(handleSubmit)} className="formsRegister p-4">
-      <div className="text-center"><img className='w2 h2 logoRegister' src={icono} alt="icono restaurante" /></div>
+        <div className="text-center">
+          <img
+            className="w2 h2 logoRegister"
+            src={icono}
+            alt="icono restaurante"
+          />
+        </div>
         <h4 className="text-center mb-4">Welcome to Larana</h4>
         <article className="row">
           <div className="col-12 col-md-6">
@@ -123,15 +129,20 @@ const RegisterForm = () => {
           </div>
         </article>
         <p className="text-center">
-        The password must contain at least one lowercase letter, one uppercase letter, and be between 8 and 15 characters long.
+          The password must contain at least one lowercase letter, one uppercase
+          letter, and be between 8 and 15 characters long.
         </p>
         <div className="registerButton">
-        <button type="submit" className="btn w-100 button" id="registerBtn">
-          Sing Up
-        </button>
+          <button type="submit" className="btn w-100 button" id="registerBtn">
+            Sign Up
+          </button>
         </div>
         <p className="my-2 text-center">
-          Do you already have an accountt?<Link to="/login" className="link"> Log in </Link>
+          Do you already have an accountt?
+          <Link to="/login" className="link">
+            {" "}
+            Log in{" "}
+          </Link>
         </p>
       </form>
     </section>
