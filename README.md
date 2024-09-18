@@ -36,8 +36,8 @@ Larana Restaurant is a digital experience designed so that customers enjoy their
 - To test the admin view, use this account: Email: lorgarcia@hotmail.com | Password: aA1*bbbb
 
 ## Team
-- [Iñigo Enzo](https://github.com/einigo)
 - [Gunsett Alexis](https://github.com/mauricio-gunsett)
+- [Iñigo Enzo](https://github.com/einigo)
 - [Canepa Fabricio](https://github.com/FabriCanepa)
 
 
