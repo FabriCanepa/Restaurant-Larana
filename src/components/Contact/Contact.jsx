@@ -26,6 +26,10 @@ const Contact = () => {
           id="fieldName"
           {...register("name", {
             required: "This field is required!",
+            pattern: {
+              value: /^[A-Za-zÀ-ÿ\s]+$/,
+              message: "Only letters and spaces are allowed.",
+            },
             minLength: {
               value: 3,
               message: "At least 3 characters required.",

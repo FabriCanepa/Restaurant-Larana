@@ -9,7 +9,7 @@ import { useSession } from "../../stores/useSession";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const Cart = () => {
-  const { cartItems, clearProductOrder, removeItemFromCart } = useCart();
+  const { addItemToCart, cartItems, clearProductOrder, removeItemFromCart } = useCart();
   const { user } = useSession();
 
   if (!user || !user.id) {
