@@ -1,4 +1,4 @@
-# Project Name: Restaurante Larana
+# Project Name: Restaurant Larana
 
 ## Description
 Larana Restaurant is a digital experience designed so that customers enjoy their visit to the restaurant from the moment they access the website. Users can create an account, easily log in, and place orders by adding products to their cart. Additionally, they can assign their table number, contact the restaurant through the contact page, and, for administrators, manage products from a dedicated and simplified administration section.
@@ -39,5 +39,8 @@ Larana Restaurant is a digital experience designed so that customers enjoy their
 - [Gunsett Alexis](https://github.com/mauricio-gunsett)
 - [Iñigo Enzo](https://github.com/einigo)
 - [Canepa Fabricio](https://github.com/FabriCanepa)
+
+## Page
+- Link: https://restauratelarana.netlify.app/
 
 
